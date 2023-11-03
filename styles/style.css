@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'helvetica';
+    src: url('../assets/fonts/HelveticaNowText-Regular.otf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'nourd';
+    src: url('../assets/fonts/nourd_regular.ttf') format('truetype');
+  }
+
+  :root{
+    --background:#202020;
+    --lightgreen:#6FB444;
+    --darkgreen:#122903;
+  }
+
+
+  body{
+    font-family: 'helvetica', sans-serif;
+  }
+  
