@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero</title>
+    <style>
+     @import url(../styles/style.css);
+
+
+        .hero-container {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box; /* Add this to account for padding and borders */
+        }
+
+        .hero-container img {
+            width: 100%;
+            height: 100%; /* Add this to ensure the image covers the entire container */
+            object-fit: cover;
+        }
+
+        .hero-container .hero-text{
+            position: absolute;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            bottom: 80px;
+            font-family: 'helveticaBold';
+            font-size: 22px;
+        }
+        .hero-container .hero-text span{
+            font-family: 'helveticaThin';
+            font-size: 15px;
+        }
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+}
+@media (min-width: 481px) and (max-width: 1440px){
+    .hero-container {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            position: relative;
+            box-sizing: border-box; 
+        }
+        .hero-container .hero-text{
+            position: absolute;
+            color: #fff;
+            padding: 10px;
+            text-align: start;
+            left: 50px;
+            bottom: 50%;
+            font-size: 40px;
+            font-family: 'helveticaBold';
+            font-weight:900;
+        }
+        .hero-container .hero-text span{
+            font-size: 20px;
+            font-family: 'helveticaThin';
+            font-weight:100;
+        }
+}
+/* @media (min-width: 769px) and (max-width: 1024px){
+}
+@media (min-width: 1025px) and (max-width: 1440px){
+} */
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="hero-container">
+            <div class="hero-text">
+                <span>EVOLVING FOR A</span><br>
+                SUSTAINABLE FUTURE
+            </div>
+            <img src="/assets/images/Hero-Mobile.jpg" id="hero-bg" alt="hero">
+
+        </div>
+    </main>
+
+
+
+    <script>
+const image = document.getElementById("hero-bg");
+
+function updateImageSource() {
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth > 480) {
+    image.src = "../assets/images/Hero-Desktop.jpg";
+  } else {
+    image.src = "../assets/images/Hero-Mobile.jpg";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", updateImageSource);
+window.addEventListener("resize", updateImageSource);
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,12 +1,26 @@
 @font-face {
-    font-family: 'helvetica';
-    src: url('../assets/fonts/HelveticaNowText-Regular.otf') format('truetype');
-  }
+  font-family: 'helvetica';
+  src: url('../assets/fonts/HelveticaNowText-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'helveticaThin';
+  src: url('../assets/fonts/HelveticaNowText-Thin.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'helveticaBold';
+  src: url('../assets/fonts/HelveticaNowText-Black.otf') format('truetype');
+}
+
+
 
   @font-face {
     font-family: 'nourd';
     src: url('../assets/fonts/nourd_regular.ttf') format('truetype');
   }
+
+  
 
   :root{
     --background:#202020;

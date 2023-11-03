@@ -29,6 +29,9 @@ body {
     justify-content: start;
     align-items: center;
 }
+.nav-logo svg path{
+    fill: white;
+}
 
 
 .nav-container .nav-links {
@@ -47,7 +50,7 @@ body {
 }
 
 .nav-container .nav-links ul li a {
-    color: var(--background);
+    color: white;
     text-decoration: none;
     position: relative;
 }
