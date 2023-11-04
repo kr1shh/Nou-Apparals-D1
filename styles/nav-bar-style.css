@@ -13,12 +13,21 @@ body {
 
 .nav-container nav {
     width: 100%;
-    height: 50px;
+    height: 60px;
     display: flex;
     position: fixed;
-    z-index: 10;
+    z-index: 100;
     font-family: 'helvetica';
+    transition: all .3s;
 }
+
+.nav-container nav.nav-bg{
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    background-color: rgba(112, 112, 112, 0.5);
+    /* border: 1px solid rgba(255, 255, 255, 0.125); */
+}
+
 
 .nav-container .nav-logo {
     width: 50%;
@@ -136,7 +145,7 @@ body {
     color: var(--lightgreen);
 }
 
-.nav-mob svg circle.change {
+.nav-mob svg circle {
     fill: white;
 }
 
@@ -158,7 +167,7 @@ body {
     }
 
     .nav-logo svg {
-        margin-top: 5px;
+        /* margin-top: 5px; */
         width: 65px;
     }
 }

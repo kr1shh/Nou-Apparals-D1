@@ -1,12 +1,12 @@
-const image = document.getElementById("footerbg");
+const img = document.getElementById("footerbg");
 
 function updateImageSource() {
   const screenWidth = window.innerWidth;
 
   if (screenWidth > 480) {
-    image.src = "../assets/images/footerbgDesktop.jpg";
+    img.src = "../assets/images/footerbgDesktop.jpg";
   } else {
-    image.src = "../assets/images/footerbg.jpg";
+    img.src = "../assets/images/footerbg.jpg";
   }
 }
 
