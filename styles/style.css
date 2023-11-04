@@ -29,6 +29,29 @@
   }
 
 
+
+/* ======================= Scroll-bar styles ===================== */
+
+
+/* Firefox */
+/* Hide scrollbars in Firefox */
+* {
+  scrollbar-color: #222222 #DFE9EB;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+}
+
+/* =============================================================== */
+
+
+
   body{
     font-family: 'helvetica', sans-serif;
     margin: 0;

@@ -1,4 +1,10 @@
 /* =================== Custom elements ==================== */
+
+
+
+/* ===================== General Components ==================== */
+
+
 class Nav_bar extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
@@ -65,24 +71,6 @@ class Nav_bar extends HTMLElement {
     }
 }
 
-
-
-class Hero_section extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
-      <main>
-      <div class="hero-container">
-          <div class="hero-text">
-              <span>EVOLVING FOR A</span><br>
-              SUSTAINABLE FUTURE
-          </div>
-          <img src="/assets/images/Hero-Mobile.jpg" id="hero-bg" alt="hero">
-
-      </div>
-  </main>
-      `
-    }
-}
 
 
 class Footer_section extends HTMLElement {
@@ -164,6 +152,40 @@ class Footer_section extends HTMLElement {
       `
     }
 }
+
+
+
+/* ============================================================= */
+
+
+
+/* ====================== Home Page Components ============================== */
+
+
+
+class Hero_section extends HTMLElement {
+    connectedCallback() {
+      this.innerHTML = `
+      <main>
+      <div class="hero-container">
+          <div class="hero-text">
+              <span>EVOLVING FOR A</span><br>
+              SUSTAINABLE FUTURE
+          </div>
+          <img src="/assets/images/Hero-Mobile.jpg" id="hero-bg" alt="hero">
+
+      </div>
+  </main>
+      `
+    }
+}
+
+
+
+
+/* ========================================================================== */
+
+
 
 
 /* ================= Defining all custom elements ================ */
