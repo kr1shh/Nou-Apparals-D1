@@ -6,7 +6,7 @@ function updateImageSource() {
   if (screenWidth > 480) {
     image.src = "../assets/images/footerbgDesktop.jpg";
   } else {
-    image.src = "../assets/images/footerbg.jpg.jpg";
+    image.src = "../assets/images/footerbg.jpg";
   }
 }
 
