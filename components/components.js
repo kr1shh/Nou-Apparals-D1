@@ -39,10 +39,10 @@ class Nav_bar extends HTMLElement {
           </div>
           <div class="nav-links">
               <ul>
-                  <li><a href="#">HOME</a></li>
+                  <li><a href="/">HOME</a></li>
                   <li><a href="#">ABOUT</a></li>
                   <li><a href="#">SERVICES</a></li>
-                  <li><a href="#">BLOG</a></li>
+                  <li><a href="../pages/blog-page.html">BLOG</a></li>
                   <li><a href="#">GALLERY</a></li>
                   <li><a href="#">CONTACT</a></li>
               </ul>
@@ -56,10 +56,10 @@ class Nav_bar extends HTMLElement {
           </div>
           <div class="mob-nav">
               <ul>
-                  <li><a href="#">HOME</a></li>
+                  <li><a href="/">HOME</a></li>
                   <li><a href="#">ABOUT</a></li>
                   <li><a href="#">SERVICES</a></li>
-                  <li><a href="#">BLOG</a></li>
+                  <li><a href="../pages/blog-page.html">BLOG</a></li>
                   <li><a href="#">GALLERY</a></li>
                   <li><a href="#">CONTACT</a></li>
               </ul>
@@ -101,7 +101,7 @@ class Footer_section extends HTMLElement {
                                         <input type="text" placeholder="Enter your Email">
                                         <button onclick="subscribe()">
                                             <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path opacity="0.5" d="M28.0832 1.93065L2.00204 0.366025C0.984683 0.303206 0.400818 1.39213 0.930092 2.1859L4.06334 6.86199L22.5813 4.2675C22.9372 4.21568 23.0534 4.7311 22.7086 4.83704L4.99817 10.3217L2.83359 13.6027C2.19901 14.5645 3.11053 15.7099 4.14093 15.3894L8.80755 13.9463L12.4823 19.4243C12.8997 20.0506 13.7993 20.1235 14.3167 19.5698L28.8673 3.89869C29.5491 3.16682 29.0572 1.98826 28.0832 1.93065Z" fill="white"/>
+                                                <path opacity="1" d="M28.0832 1.93065L2.00204 0.366025C0.984683 0.303206 0.400818 1.39213 0.930092 2.1859L4.06334 6.86199L22.5813 4.2675C22.9372 4.21568 23.0534 4.7311 22.7086 4.83704L4.99817 10.3217L2.83359 13.6027C2.19901 14.5645 3.11053 15.7099 4.14093 15.3894L8.80755 13.9463L12.4823 19.4243C12.8997 20.0506 13.7993 20.1235 14.3167 19.5698L28.8673 3.89869C29.5491 3.16682 29.0572 1.98826 28.0832 1.93065Z" fill="#6FB444"/>
                                             </svg>
                                         </button>
                                     </div>

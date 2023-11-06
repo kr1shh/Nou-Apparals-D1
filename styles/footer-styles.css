@@ -1,6 +1,12 @@
 @import url(../styles/style.css);
 
 
+:root{
+    --background:#202020;
+    --lightgreen:#6FB444;
+    --darkgreen:#122903;
+  }
+
 
 
 .footer-icons .f-icon svg path{
@@ -27,6 +33,7 @@
     top: 60px;
 }
 .footer-container .footer-sections h2{
+    color: var(--lightgreen);
     font-family: 'helveticaBold';
     margin: 0;
     font-size: 20px;
