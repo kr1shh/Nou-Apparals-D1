@@ -44,7 +44,7 @@ class Nav_bar extends HTMLElement {
                   <li><a href="#">SERVICES</a></li>
                   <li><a href="../pages/blog-page.html">BLOG</a></li>
                   <li><a href="#">GALLERY</a></li>
-                  <li><a href="#">CONTACT</a></li>
+                  <li><a href="../pages/contact-page.html">CONTACT</a></li>
               </ul>
               <div class="nav-mob">
                   <svg width="5" height="52" viewBox="0 0 14 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +61,7 @@ class Nav_bar extends HTMLElement {
                   <li><a href="#">SERVICES</a></li>
                   <li><a href="../pages/blog-page.html">BLOG</a></li>
                   <li><a href="#">GALLERY</a></li>
-                  <li><a href="#">CONTACT</a></li>
+                  <li><a href="../pages/contact-page.html">CONTACT</a></li>
               </ul>
           </div>
       </nav>

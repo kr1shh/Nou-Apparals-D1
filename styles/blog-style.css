@@ -84,7 +84,7 @@
     font-family: 'helveticathin';
     font-size:14px ;
     color: white;
-    box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66);
+    box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),inset 16px 21px 20px #3d3d3d;
     -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66);
     }
 
@@ -187,3 +187,13 @@
 
 
 /* ================================================== */
+
+
+
+/* ==================== Responsive ======================= */
+
+
+
+
+
+/* ======================================================= */
