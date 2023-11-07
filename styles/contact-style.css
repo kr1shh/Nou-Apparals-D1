@@ -111,7 +111,7 @@ body{
 }
 
 .c-sec-2 .c-sec2-contact{
-  width: 80%;
+  /* width: 80%; */
   display: flex;
   gap: 10px;
   flex-direction: column;
@@ -120,12 +120,12 @@ body{
 }
 
 .c-sec-2 .c-sec2-cont{
-  width: 80%;
+  /* width: 80%; */
   margin-bottom: 30px;
 }
 
 .c-sec-2 .c-sec2-contact input{
-  width: 235px;
+  width: 90%;
   height: 40px;
   border-radius: 15px;
   border: 0;
@@ -137,7 +137,7 @@ body{
 }
 
 .c-sec-2 .c-sec2-contact textarea{
-  width: 235px;
+  width: 90%;
   height: 70px;
   border: 0;
   border-radius: 15px;
@@ -160,6 +160,7 @@ body{
   border: 0;
   margin: 20px 0px 0px 0px;
   font-family: 'helveticabold';
+  font-size: 10px;
   background-color: var(--lightgreen);
 }
 
