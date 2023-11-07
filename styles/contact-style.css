@@ -29,6 +29,7 @@ body{
 }
 .c-sec-1 img{
   width: 70%;
+  transform: rotate(180deg);
 }
 
 

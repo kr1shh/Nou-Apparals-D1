@@ -41,7 +41,7 @@ class Nav_bar extends HTMLElement {
               <ul>
                   <li><a href="/">HOME</a></li>
                   <li><a href="#">ABOUT</a></li>
-                  <li><a href="#">SERVICES</a></li>
+                  <li><a href="../pages/services-page.html">SERVICES</a></li>
                   <li><a href="../pages/blog-page.html">BLOG</a></li>
                   <li><a href="#">GALLERY</a></li>
                   <li><a href="../pages/contact-page.html">CONTACT</a></li>
@@ -58,7 +58,7 @@ class Nav_bar extends HTMLElement {
               <ul>
                   <li><a href="/">HOME</a></li>
                   <li><a href="#">ABOUT</a></li>
-                  <li><a href="#">SERVICES</a></li>
+                  <li><a href="../pages/services-page.html">SERVICES</a></li>
                   <li><a href="../pages/blog-page.html">BLOG</a></li>
                   <li><a href="#">GALLERY</a></li>
                   <li><a href="../pages/contact-page.html">CONTACT</a></li>
