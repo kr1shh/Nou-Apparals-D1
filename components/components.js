@@ -40,7 +40,7 @@ class Nav_bar extends HTMLElement {
           <div class="nav-links">
               <ul>
                   <li><a href="/">HOME</a></li>
-                  <li><a href="#">ABOUT</a></li>
+                  <li><a href="../pages/about-page.html">ABOUT</a></li>
                   <li><a href="../pages/services-page.html">SERVICES</a></li>
                   <li><a href="../pages/blog-page.html">BLOG</a></li>
                   <li><a href="#">GALLERY</a></li>
@@ -57,7 +57,7 @@ class Nav_bar extends HTMLElement {
           <div class="mob-nav">
               <ul>
                   <li><a href="/">HOME</a></li>
-                  <li><a href="#">ABOUT</a></li>
+                  <li><a href="../pages/about-page.html">ABOUT</a></li>
                   <li><a href="../pages/services-page.html">SERVICES</a></li>
                   <li><a href="../pages/blog-page.html">BLOG</a></li>
                   <li><a href="#">GALLERY</a></li>
