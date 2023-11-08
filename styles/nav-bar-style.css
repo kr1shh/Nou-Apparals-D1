@@ -157,6 +157,76 @@ body {
 
 
 
+
+.mob-nav .mob-nav-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .bg-circle {
+    background-color: #FFFFFF;
+    opacity: 0.2; 
+    transition: all .3s;
+    animation: moveScale 10s infinite linear alternate;
+  }
+  
+  @keyframes moveScale {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-20px) scale(1.3);
+    }
+    100% {
+      transform: translateY(0) scale(.9);
+    }
+  }
+  
+  /* Circle styles (assuming you want to keep them within the .mob-nav-bg container) */
+  .bg-circle:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: -147px;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 20rem;
+    filter: blur(70px);
+  }
+  
+  .bg-circle:nth-child(2) {
+    position: absolute;
+    top: 151px;
+    left: 730px;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 10rem;
+    filter: blur(25px);
+  }
+  
+  .bg-circle:nth-child(3) {
+    position: absolute;
+    top: 489px;
+    left: 478px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 10rem;
+    filter: blur(10px);
+  }
+  
+  .bg-circle:nth-child(4) {
+    position: absolute;
+    top: 486px;
+    left: 33px;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 10rem;
+    filter: blur(21px);
+  }
+
+
+
 @media (min-width: 320px) and (max-width: 480px) {
     .nav-container .nav-mob {
         display: block;
@@ -170,6 +240,47 @@ body {
         /* margin-top: 5px; */
         width: 65px;
     }
+
+
+    .bg-circle:nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: -111px;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 20rem;
+        filter: blur(45px);
+        }
+
+        .bg-circle:nth-child(2) {
+            position: absolute;
+            top: 151px;
+            left: 275px;
+            height: 5rem;
+            width: 5rem;
+            border-radius: 10rem;
+            filter: blur(20px);
+        }
+
+        .bg-circle:nth-child(3) {
+        position: absolute;
+        top: 498px;
+        left: 244px;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 10rem;
+        filter: blur(10px);
+        }
+
+        .bg-circle:nth-child(4) {
+        position: absolute;
+        top: 486px;
+        left: 33px;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 10rem;
+        filter: blur(21px);
+        }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {

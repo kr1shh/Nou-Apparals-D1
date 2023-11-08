@@ -1,14 +1,16 @@
-const img = document.getElementById("footerbg");
+document.addEventListener("DOMContentLoaded", () => {
+  const img = document.querySelector(".footer-bg");
 
-function updateImageSource() {
-  const screenWidth = window.innerWidth;
+  function updateImageSource() {
+    const screenWidth = window.innerWidth;
 
-  if (screenWidth > 480) {
-    img.src = "../assets/images/footerbgDesktop.jpg";
-  } else {
-    img.src = "../assets/images/footerbg.jpg";
+    if (screenWidth > 480) {
+      img.style.backgroundImage = "../assets/images/footerbgDesktop.jpg";
+    } else {
+      img.style.backgroundImage = "../assets/images/footerbg.jpg";
+    }
   }
-}
 
-document.addEventListener("DOMContentLoaded", updateImageSource);
-window.addEventListener("resize", updateImageSource);
+  window.addEventListener("resize", updateImageSource);
+  updateImageSource();
+});

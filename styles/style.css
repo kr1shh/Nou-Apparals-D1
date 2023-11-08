@@ -30,6 +30,11 @@
 
 
 
+  html,body{
+    -webkit-tap-highlight-color: transparent; 
+  }
+
+
 /* ======================= Scroll-bar styles ===================== */
 
 

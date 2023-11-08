@@ -18,24 +18,34 @@
 /* ================ Blog Hero Styles ============= */
 
 .blog-hero{
+    position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     padding: 0;
-    background-image: url(../assets/images/01.jpg);
+    /* background-image: url(../assets/images/01.jpg);
     background-position: -130px 0px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     color: white;
+    overflow: hidden;
 }
+
+.blog-hero img{
+    position: absolute;
+    width: 200%;
+    z-index: -1;
+}
+
 .blog-hero .blog-content{
-    width: 60%;
+    width: 180px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     text-align: center;
     font-family: 'helveticabold';
@@ -68,6 +78,7 @@
     gap: 65px;
     margin: 65px 0px 65px 0px;
 }
+
 
 .blog-cards .blog-card{
     position: relative;
@@ -185,6 +196,15 @@
     color: black;
 }
 
+.blog-cards .single-row {
+    display: flex;
+    flex-direction: column;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 
 /* ================================================== */
 
@@ -194,6 +214,47 @@
 
 
 
+@media (min-width: 481px) and (max-width: 768px) {
+    .blog-cards .single-row {
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px; 
+      }
+
+      .blog-cards .blog-card{
+        width: 40%;
+      }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .blog-cards .single-row {
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px; 
+      }
+
+      .blog-cards .blog-card{
+        width: 30%;
+      }
+}
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+    .blog-cards .single-row {
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px; 
+      }
+
+      .blog-cards .blog-card{
+        width: 20%;
+      }
+}
 
 
 /* ======================================================= */

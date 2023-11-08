@@ -1,3 +1,4 @@
+
 /* =================== Custom elements ==================== */
 
 
@@ -63,6 +64,16 @@ class Nav_bar extends HTMLElement {
                   <li><a href="#">GALLERY</a></li>
                   <li><a href="../pages/contact-page.html">CONTACT</a></li>
               </ul>
+
+
+
+              <div class="mob-nav-bg">
+                    <!-- <img src="../assets/images/bgels.svg" alt="" class="bg-circle"> -->
+                    <div class="bg-circle"></div>
+                    <div class="bg-circle"></div>
+                    <div class="bg-circle"></div>
+                    <div class="bg-circle"></div>
+                </div>
           </div>
       </nav>
   </div>
@@ -167,18 +178,17 @@ class Footer_section extends HTMLElement {
 class Hero_section extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
-      <main>
+    <main>
       <div class="hero-container">
           <div class="hero-text">
               <span>EVOLVING FOR A</span><br>
               SUSTAINABLE FUTURE
           </div>
-          <img src="/assets/images/Hero-Mobile.jpg" id="hero-bg" alt="hero">
-
+          <img id="hero-bg" src="../assets/images/Hero-Mobile.jpg" alt="hero">
       </div>
-  </main>
+    </main>
       `
-    }
+    }   
 }
 
 

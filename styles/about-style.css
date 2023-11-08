@@ -85,7 +85,7 @@
   }
 
   .about-content .about-card h2{
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0px 10px 0px;
     font-family: 'helvetica';
     color: var(--lightgreen);
   }

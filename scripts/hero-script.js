@@ -1,14 +1,16 @@
-const image = document.getElementById("hero-bg");
+document.addEventListener("DOMContentLoaded", () => {
+  const image = document.getElementById("hero-bg");
 
-function updateImageSource() {
-  const screenWidth = window.innerWidth;
+  function updateImageSource() {
+    const screenWidth = window.innerWidth;
 
-  if (screenWidth > 480) {
-    image.src = "../assets/images/Hero-Desktop.jpg";
-  } else {
-    image.src = "../assets/images/Hero-Mobile.jpg";
+    if (screenWidth > 480) {
+      image.src = "../assets/images/Hero-Desktop.jpg";
+    } else {
+      image.src = "../assets/images/Hero-Mobile.jpg";
+    }
   }
-}
 
-document.addEventListener("DOMContentLoaded", updateImageSource);
-window.addEventListener("resize", updateImageSource);
+  updateImageSource();
+  window.addEventListener("resize", updateImageSource);
+});
