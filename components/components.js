@@ -44,7 +44,6 @@ class Nav_bar extends HTMLElement {
                   <li><a href="../pages/about-page.html">ABOUT</a></li>
                   <li><a href="../pages/services-page.html">SERVICES</a></li>
                   <li><a href="../pages/blog-page.html">BLOG</a></li>
-                  <li><a href="#">GALLERY</a></li>
                   <li><a href="../pages/contact-page.html">CONTACT</a></li>
               </ul>
               <div class="nav-mob">
@@ -61,7 +60,6 @@ class Nav_bar extends HTMLElement {
                   <li><a href="../pages/about-page.html">ABOUT</a></li>
                   <li><a href="../pages/services-page.html">SERVICES</a></li>
                   <li><a href="../pages/blog-page.html">BLOG</a></li>
-                  <li><a href="#">GALLERY</a></li>
                   <li><a href="../pages/contact-page.html">CONTACT</a></li>
               </ul>
 
