@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .proximity-el{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            /* background-color: aqua; */
+            /* overflow: hidden; */
+        }
+        .proximity-el .pro-main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .proximity-el .pro-main img{
+            width: 70%;
+            /* height: 100%; */
+        }
+        .pro-el img:nth-child(1){
+            position: absolute;
+            width: 50px;
+            right: 0;
+            top: 60px;
+
+        }
+        .pro-el img:nth-child(2){
+            position: absolute;
+            width: 50px;
+            left: 0;
+            bottom: 0;
+            transform: scaleX(-1);
+            
+        }
+        .proximity-el .pro-txt{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 25px;
+            right: 5px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            animation: rotateText 20s linear infinite;
+        }
+
+        @keyframes rotateText{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .proximity-el .pro-txt span{
+            position: absolute;
+            left: 50%;
+            top: 11%;
+            transform-origin: 0 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="proximity-el">
+        <div class="pro-main">
+            <img src="../assets/images/BAG.png" alt="Bag img">
+        </div>
+        <div class="pro-el">
+            <img id="proximity-element" src="../assets/images/Card01.png" alt="Proximity-element">
+            <img id="proximity-element" src="../assets/images/Card02.png" alt="Proximity-element">
+        </div>
+        <div class="pro-txt">
+
+            <p>
+                BRANDING-BRANDING-BRANDING-BRANDING-BRANDING-
+            </p>
+
+        </div>
+    </div>
+
+    <script>
+
+
+
+/* ===============================Proximity script====================================== */
+
+
+
+    const proximityElements = document.querySelectorAll("#proximity-element");
+    const movementStrength = 2; // Adjust this value to control the movement strength
+
+    document.addEventListener("mousemove", (e) => {
+        proximityElements.forEach((proximityElement) => {
+            const { clientX, clientY } = e;
+            const { left, top, width, height } = proximityElement.getBoundingClientRect();
+            const centerX = left + width / 2;
+            const centerY = top + height / 2;
+
+            const deltaX = clientX - centerX;
+            const deltaY = clientY - centerY;
+
+            const moveX = (deltaX / width) * movementStrength;
+            const moveY = (deltaY / height) * movementStrength;
+
+            proximityElement.style.transition = "transform 0s"; // Disable transition
+            proximityElement.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        });
+    });
+
+    document.addEventListener("mouseleave", () => {
+        proximityElements.forEach((proximityElement) => {
+            proximityElement.style.transition = "transform 0.3s"; // Re-enable transition
+            proximityElement.style.transform = "translate(0, 0)";
+        });
+    });
+
+
+/* ===================================================================== */
+
+
+/* ===========================Rotating text============================= */
+
+
+const text = document.querySelector('.pro-txt p');
+text.innerHTML = text.innerText.split("").map(
+	(char,i) =>
+	`<span style="transform:rotate(${i*8}deg)">${char}</span>`
+).join("")
+
+
+
+/* ===================================================================== */
+
+
+    </script>
+</body>
+</html>
