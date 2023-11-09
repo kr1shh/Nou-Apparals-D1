@@ -218,22 +218,23 @@ class Hero_section extends HTMLElement {
 class Proximity_comp extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-        <div class="proximity-el">
-        <div class="pro-main">
-            <img src="../assets/images/BAG.png" alt="Bag img">
-        </div>
-        <div class="pro-el">
-            <img id="proximity-element" src="../assets/images/Card01.png" alt="Proximity-element">
-            <img id="proximity-element" src="../assets/images/Card02.png" alt="Proximity-element">
-        </div>
-        <div class="pro-txt">
+            <div class="proximity-el">
+            <div class="pro-main">
+                <img src="../assets/images/BAGhalf.png" alt="Bag img">
+                <img src="../assets/images/BAG.png" alt="Bag img">
+            </div>
+            <div class="pro-el">
+                <img id="proximity-element" src="../assets/images/Card01.png" alt="Proximity-element">
+                <img id="proximity-element" src="../assets/images/Card02.png" alt="Proximity-element">
+            </div>
+            <div class="pro-txt">
 
-            <p>
-                BRANDING-BRANDING-BRANDING-BRANDING-BRANDING-
-            </p>
+                <p>
+                    BRANDING-BRANDING-BRANDING-BRANDING-BRANDING-
+                </p>
 
+            </div>
         </div>
-    </div>
     `
   }
 }
