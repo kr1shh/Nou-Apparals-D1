@@ -213,6 +213,34 @@ class Hero_section extends HTMLElement {
 /* ========================================================================== */
 
 
+/* ====================== Proximity Components ============================== */
+
+class Proximity_comp extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+        <div class="proximity-el">
+        <div class="pro-main">
+            <img src="../assets/images/BAG.png" alt="Bag img">
+        </div>
+        <div class="pro-el">
+            <img id="proximity-element" src="../assets/images/Card01.png" alt="Proximity-element">
+            <img id="proximity-element" src="../assets/images/Card02.png" alt="Proximity-element">
+        </div>
+        <div class="pro-txt">
+
+            <p>
+                BRANDING-BRANDING-BRANDING-BRANDING-BRANDING-
+            </p>
+
+        </div>
+    </div>
+    `
+  }
+}
+
+
+/* ========================================================================== */
+
 
 
 /* ================= Defining all custom elements ================ */
@@ -220,3 +248,4 @@ class Hero_section extends HTMLElement {
 customElements.define('nav-bar',Nav_bar);
 customElements.define('hero-sec',Hero_section);
 customElements.define('footer-sec',Footer_section);
+customElements.define('proximity-el',Proximity_comp);
