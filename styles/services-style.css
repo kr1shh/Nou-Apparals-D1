@@ -62,6 +62,7 @@
     color: var(--lightgreen);
     font-size: 25px;
     font-weight: 600;
+    /* margin-bottom: 10px; */
   }
   .s-sec1-card button{
     width: 120px;
@@ -71,6 +72,10 @@
     margin-bottom: 15px;
     background-color: #292929;
     color: white;
+  }
+
+  .s-sec1-card p{
+    margin: 20px 20px 20px 20px;
   }
 
 
@@ -105,3 +110,44 @@
 
 
 
+
+@media (min-width: 481px) and (max-width:768px){
+  .s-section-1{
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .s-section-1:nth-child(2) .s-sec1-img{
+    order: 2;
+  }
+  .s-section-1:nth-child(2) .s-sec1-cont{
+    order: 1;
+  }
+}
+@media (min-width: 769px) and (max-width:1024px){
+  .s-section-1{
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .s-section-1:nth-child(2) .s-sec1-img{
+    order: 2;
+  }
+  .s-section-1:nth-child(2) .s-sec1-cont{
+    order: 1;
+  }
+}
+
+@media (min-width: 1025px) and (max-width:1440px){
+  .s-section-1{
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .s-section-1:nth-child(2) .s-sec1-img{
+    order: 2;
+  }
+  .s-section-1:nth-child(2) .s-sec1-cont{
+    order: 1;
+  }
+}
