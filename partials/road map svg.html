@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            height: 200vh; /* Increased height for demonstration */
+        }
+
+        .svg-container {
+            width: 80%;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            height: 50vh; /* Set the height of the container */
+        }
+
+        svg {
+            width: 100%;
+            display: block;
+        }
+
+        svg path {
+            stroke-dasharray: 0;
+            stroke-dashoffset: 0;
+            stroke-width: 2; /* Increased stroke width for better visibility */
+            stroke: #393939;
+            fill: none;
+            transition: stroke-dashoffset 1s ease; /* Added smooth transition */
+        }
+    </style>
+</head>
+<body>
+    <div class="svg-container">
+        <svg viewBox="0 0 275 1106" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M99 1C99 1 303.5 86.5 270 265C236.5 443.5 44.5 563.5 8.5 736C-40.4289 970.451 169.5 1105 169.5 1105" stroke="#393939" stroke-width="2"/>
+        </svg>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+
+
+let path = document.querySelector('path');
+
+        // Set up GSAP timeline
+        let tl = gsap.timeline();
+
+        // Add animation to the timeline
+        tl.to(path, {
+            duration: 1, // Duration of the animation
+            strokeDashoffset: 0, // Animate to fully drawn
+            ease: "power1.inOut" // Easing function
+        });
+
+        function updateDashoffset() {
+            let scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+            let pathLength = path.getTotalLength();
+            let drawLength = pathLength * scrollPercentage;
+            path.style.strokeDashoffset = pathLength - drawLength;
+        }
+
+        // Update the stroke-dashoffset on scroll
+        document.addEventListener('scroll', updateDashoffset);
+
+        // Initial update
+        updateDashoffset();
+
+
+    </script>
+</body>
+</html>
