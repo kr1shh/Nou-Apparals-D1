@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/icons/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../styles/footer-styles.css">
     <link rel="stylesheet" href="../styles/nav-bar-style.css">
     <link rel="stylesheet" href="../styles/style.css">
@@ -24,36 +25,41 @@
 
 
         <section class="about-hero">
-            <p>
+            <p data-aos="fade-in">
                 LOREM IPSUM<br>
-                <span>WHO ARE WE?</span>
+                <span data-aos="fade-in">WHO ARE WE?</span>
             </p>
-            <img src="../assets/images/Sou.png" alt="charecter">
+            
+            <div class="about-hero-img-wrapper">
+                <img data-aos="slide-left" src="../assets/images/Sou.png" alt="charecter">
+            </div>
+
+            <!-- <img data-aos= "slide-left" src="../assets/images/Sou.png" alt="charecter"> -->
             <!-- <div class="about-bg"></div>  -->
         </section>
 
         <section class="about-content">
             <div class="about-cards">
-                <div class="about-card">
-                    <h2>Innovation</h2>
-                    <p>
+                <div data-aos="fade-in" class="about-card">
+                    <h2 data-aos="fade-in">Innovation</h2>
+                    <p data-aos="fade-in">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     </p>
                 </div>
-                <div class="about-card">
-                    <h2>Startup</h2>
-                    <p>
+                <div data-aos="fade-in" class="about-card">
+                    <h2 data-aos="fade-in">Startup</h2>
+                    <p data-aos="fade-in">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     </p>
                 </div>
             </div>
-            <div class="about-des">
-                <h2>Teamwork</h2>
-                <p>
+            <div data-aos="fade-in" class="about-des">
+                <h2 data-aos="fade-in">Teamwork</h2>
+                <p data-aos="fade-in">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
                 </p>
             </div>
-            <img src="../assets/images/Sou.png" alt="char">
+            <img data-aos="slide-right" src="../assets/images/Sou.png" alt="char">
         </section>
 
 
@@ -71,7 +77,10 @@
     
 
 
-
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     <script src="../components/components.js"></script>
     <script src="../scripts/footerbg-script.js"></script>
     <script src="../scripts/script.js"></script>
