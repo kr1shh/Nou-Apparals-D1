@@ -147,6 +147,18 @@
       .about-hero {
         font-size: 20px;
       }
+
+      .about-content .about-card {
+        width: 550px;
+      }
+      .about-content img {
+        right: 65%;
+        width: 50%;
+    }
+
+    .footer-tab img {
+      width: 100%;
+  }
   
     }
   
@@ -165,6 +177,19 @@
       .about-hero {
         font-size: 25px;
       }
+
+            .about-content .about-card {
+        width: 550px;
+      }
+      .about-content img {
+        right: 65%;
+        width: 50%;
+    }
+
+    .footer-tab img {
+      width: 100%;
+  }
+  
     }
   
     @media (min-width:1025px) and (max-width:1440px) {
@@ -182,6 +207,20 @@
       .about-hero {
         font-size: 25px;
       }
+
+
+      .about-content .about-card {
+        width: 550px;
+      }
+      .about-content img {
+        right: 65%;
+        width: 50%;
+    }
+
+    .footer-tab img {
+      width: 100%;
+  }
+  
     }
   
     @media (min-width:1441px) {
@@ -198,5 +237,19 @@
       .about-hero {
         font-size: 25px;
       }
+
+
+      .about-content .about-card {
+        width: 550px;
+      }
+      .about-content img {
+        right: 65%;
+        width: 50%;
+    }
+
+    .footer-tab img {
+      width: 100%;
+  }
+  
   
     }
