@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/icons/Favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="../styles/footer-styles.css">
     <link rel="stylesheet" href="../styles/nav-bar-style.css">
     <link rel="stylesheet" href="../styles/style.css">
@@ -24,7 +24,7 @@
 
         <section class="s-section-1">
             <div class="s-sec1-img">
-                <proximity-el></proximity-el>
+                <proximity-el data-aos="fade-in"></proximity-el>
 
                 <!-- <div class="s-txt"></div>
                 <div class="s-img">
@@ -33,12 +33,12 @@
                 <div class="s-elmnts"></div> -->
             </div>
             <div class="s-sec1-cont">
-                <div class="s-sec1-card">
-                    <p>
+                <div data-aos="slide-right"  class="s-sec1-card">
+                    <p data-aos="fade-in" data-aos-delay="200">
                         <span>Production</span><br>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde deleniti adipisci optio nesciunt harum in itaque error ullam numquam odio.
                     </p>
-                    <button>
+                    <button data-aos="fade-in" data-aos-delay="300">
                         KNOW MORE
                     </button>
                 </div>
@@ -47,7 +47,7 @@
 
 
         <section class="s-section-1">
-            <div class="s-sec1-img">
+            <div class="s-sec1-img" data-aos="fade-in">
                 <div class="s-txt"></div>
                 <div class="s-img">
                     <img src="../assets/images/T-Shirt.png" alt="branding">
@@ -55,12 +55,12 @@
                 <div class="s-elmnts"></div>
             </div>
             <div class="s-sec1-cont">
-                <div class="s-sec1-card">
-                    <p>
+                <div class="s-sec1-card" data-aos="slide-left">
+                    <p data-aos="fade-in" data-aos-delay="200">
                         <span>Production</span><br>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde deleniti adipisci optio nesciunt harum in itaque error ullam numquam odio.
                     </p>
-                    <button>
+                    <button data-aos="fade-in" data-aos-delay="300">
                         KNOW MORE
                     </button>
                 </div>
@@ -71,8 +71,8 @@
 
         <section class="s-section-3">
             <div class="s-sec3-cont">
-                <h2>Marketing</h2>
-                <p>
+                <h2 data-aos="fade-in">Marketing</h2>
+                <p data-aos="fade-in" data-aos-delay="300">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 </p>
             </div>
@@ -87,10 +87,12 @@
     
         <!--=====================================-->
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
-    </script>
+        AOS.init({
+            duration:1000,
+        });
+    </script> -->
     <script src="../components/components.js"></script>
     <script src="../scripts/footerbg-script.js"></script>
     <script src="../scripts/script.js"></script>
