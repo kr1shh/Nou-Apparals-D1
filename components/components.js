@@ -173,7 +173,7 @@ class Footer_section extends HTMLElement {
                             </div>
                         </div>
                         <div class="footer-bg">
-                            <img src="../assets/images/charectorimg.png" alt="">
+                            <img src="../assets/images/charectorimg.png" alt="charecter" loading="lazy">
                         </div>
                     </div>
                 </footer>
@@ -200,7 +200,7 @@ class Hero_section extends HTMLElement {
               <span>EVOLVING FOR A</span><br>
               SUSTAINABLE FUTURE
           </div>
-          <img id="hero-bg" src="../assets/images/Hero-Mobile.jpg" alt="hero">
+          <img id="hero-bg" src="../assets/images/Hero-Mobile.jpg" alt="hero" loading="lazy">
       </div>
     </main>
       `
@@ -220,12 +220,12 @@ class Proximity_comp extends HTMLElement {
     this.innerHTML = `
             <div class="proximity-el">
             <div class="pro-main">
-                <img src="../assets/images/BAGhalf.png" alt="Bag img">
-                <img src="../assets/images/BAG.png" alt="Bag img">
+                <img src="../assets/images/BAGhalf.png" alt="Bag img" loading="lazy">
+                <img src="../assets/images/BAG.png" alt="Bag img" loading="lazy">
             </div>
             <div class="pro-el">
-                <img id="proximity-element" src="../assets/images/Card01.png" alt="Proximity-element">
-                <img id="proximity-element" src="../assets/images/Card02.png" alt="Proximity-element">
+                <img id="proximity-element" src="../assets/images/Card01.png" alt="Proximity-element" loading="lazy">
+                <img id="proximity-element" src="../assets/images/Card02.png" alt="Proximity-element" loading="lazy">
             </div>
             <div class="pro-txt">
 
