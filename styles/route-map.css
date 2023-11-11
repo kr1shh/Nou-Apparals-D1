@@ -1,0 +1,133 @@
+@import url(../styles/style.css);
+
+:root{
+    --background:#202020;
+    --lightgreen:#6FB444;
+    --darkgreen:#122903;
+  }
+
+
+.route-map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--background); */
+    color: white;
+}
+.route-squares{
+    position: relative;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.route-squares .r-square:nth-child(2){
+    position: absolute;
+    top: 0px;
+    left: 36px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--background);
+    border-radius: 20px;
+        box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),5px 5px 6px  #6d6d6d inset;
+    -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66);
+
+}
+
+.route-squares .r-square:nth-child(3){
+    position: absolute;
+    top: 306px;
+    left: 190px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--background);
+    border-radius: 20px;
+        box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),5px 5px 6px  #6d6d6d inset;
+    -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66);
+
+}
+
+.route-squares .r-square:nth-child(4){
+    position: absolute;
+    top: 614px;
+    left: 17px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--background);
+    border-radius: 20px;
+        box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),5px 5px 6px  #6d6d6d inset;
+    -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66);
+
+}
+
+.route-squares .r-square:nth-child(5){
+    position: absolute;
+    top: 1000px;
+    left: 144px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--background);
+    border-radius: 20px;
+        box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),5px 5px 6px  #6d6d6d inset;
+    -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66);
+
+}
+
+.rout-path .r-path{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--background); */
+}
+
+.rout-path .r-path svg{
+    width: 250px;
+}
+.rout-path .r-path svg path{
+    stroke: rgb(68, 68, 68);
+    
+}
+
+
+
+.rout-path .r-path-points{
+    position: relative;
+    z-index:5;
+}
+
+.rout-path .r-path-points .r-circle-1 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: var(--lightgreen);
+    top: 140px;
+    right: 52px;
+}
+
+.rout-path .r-path-points .r-circle-2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: var(--lightgreen);
+    top: 477px;
+    right: 147px;
+}
+
+.rout-path .r-path-points .r-circle-3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: var(--lightgreen);
+    top: 855px;
+    right: 256px;
+}
+
