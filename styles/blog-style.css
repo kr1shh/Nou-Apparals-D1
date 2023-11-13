@@ -139,11 +139,26 @@
     border: 0;
     border-radius: 50px;
     /* padding: 10px; */
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 18px;
+    margin-top: 5px;
     font-family: 'helvetica';
     background-color: var(--lightgreen);
     color: white;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+/* .blog-cards .blog-card button:hover{
+    color: var(--lightgreen);
+    background-color: transparent;
+    border: 1px solid;
+    border-color: var(--lightgreen);
+} */
+
+.blog-cards .blog-card button:hover{
+    color: var(--lightgreen);
+    background-color: white;
+    border-color: var(--lightgreen);
 }
 
 

@@ -11,6 +11,10 @@
     color: white;
     /* background-color: aqua; */
     /* overflow: hidden; */
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
 }
 .proximity-el .pro-main{
     display: flex;
@@ -46,18 +50,18 @@
 }
 .pro-el img:nth-child(1){
     position: absolute;
-    width: 50px;
-    right: 35px;
-    top: 40px;
+    width: 81px;
+    right: 19px;
+    top: 24px;
     z-index: -4;
 }
 
 
 .pro-el img:nth-child(2){
     position: absolute;
-    width: 50px;
-    left: 55px;
-    bottom: -25px;
+    width: 86px;
+    left: 43px;
+    bottom: -35px;
     transform: scaleX(-1);
     
 }

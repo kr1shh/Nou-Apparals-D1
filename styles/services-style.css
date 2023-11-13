@@ -54,14 +54,16 @@
     font-weight: 100;
     border-radius: 20px;
     font-size: 15px;
+    padding: 0px 15px 0px 15px;
     box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),/*inset 16px 21px 20px #3d3d3d*/5px 5px 6px  #6d6d6d inset;
     -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66);
   }
 
-  .s-sec1-card span{
+  .s-sec1-card h1{
     color: var(--lightgreen);
     font-size: 25px;
     font-weight: 600;
+    margin: 0px 0px 0px 0px;
     /* margin-bottom: 10px; */
   }
   .s-sec1-card button{
@@ -69,7 +71,7 @@
     height: 30px;
     border-radius: 50px;
     border: 0;
-    margin-bottom: 15px;
+    margin: -7px 0px 25px 0px;
     background-color: #292929;
     color: white;
   }
@@ -124,6 +126,9 @@
   .s-section-1:nth-child(2) .s-sec1-cont{
     order: 1;
   }
+  /* .s-section-1 .s-sec1-cont .s-sec1-card{
+    width: 55%;
+  } */
 }
 
 
@@ -143,9 +148,13 @@
   .s-section-1:nth-child(2) .s-sec1-cont{
     order: 1;
   }
+
+  .s-section-1 .s-sec1-cont .s-sec1-card{
+    width: 55%;
+  }
 }
 
-@media (min-width: 1025px) and (max-width:1440px){
+@media (min-width: 1025px) /*and (max-width:1440px)*/{
   .s-section-1{
     flex-direction: row;
     width: 80%;
@@ -160,5 +169,12 @@
   }
   .s-section-1:nth-child(2) .s-sec1-cont{
     order: 1;
+  }
+
+  .s-section-1 .s-sec1-cont .s-sec1-card{
+    width: 55%;
+  }
+  .s-section-3 .s-sec3-cont {
+    width: 60%;
   }
 }

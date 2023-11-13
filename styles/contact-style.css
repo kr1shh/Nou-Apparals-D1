@@ -279,7 +279,7 @@ body{
 
 }
 
-@media (min-width:1024px) and (max-width:1439px){
+@media (min-width:1024px) {
   .c-sec-1{
     flex-direction: row;
   }
@@ -320,12 +320,18 @@ body{
   }
 
   .c-sec-2 .c-sec2-contact{
-    width: 90%;
+    width: 250px;
     margin-left: 180px;
   }
+  .c-sec-2 .c-sec2-contact input{
+    width: 250px;
+  }
+  .c-sec-2 .c-sec2-contact textarea{
+    width: 250px;
+  } 
 }
 
-@media (min-width:1440px) and (max-width:1600px){
+@media (min-width:1440px){
   
   .c-sec-1{
     flex-direction: row;
@@ -367,7 +373,7 @@ body{
   }
 
   .c-sec-2 .c-sec2-contact{
-    width: 90%;
-    margin-left: 180px;
+    width: 250px;
+    margin-left: 285px;
   }
 }
