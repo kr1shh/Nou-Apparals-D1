@@ -240,6 +240,69 @@ class Proximity_comp extends HTMLElement {
 }
 
 
+
+class RoadMap_comp extends HTMLElement{
+    connectedCallback(){
+    this.innerHTML=`
+    <section class="route-map">
+
+
+
+        <div class="route-squares">
+
+            <div class="rout-path">
+                <div class="r-path-points">
+                    <p class="r-para-1">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, sequi.
+                    </p>
+                    <div class="r-circle-1"></div>
+                    <p class="r-para-2">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, sequi.
+                    </p>
+                    <div class="r-circle-2"></div>
+                    <p class="r-para-3">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, sequi.
+                    </p>
+                    <div class="r-circle-3"></div>
+                </div>
+                <div class="r-path">
+                    <svg width="100%" height="1106" viewBox="0 0 275 1106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M99 1C99 1 303.5 86.5 270 265C236.5 443.5 44.5 563.5 8.5 736C-40.4289 970.451 169.5 1105 169.5 1105" stroke="#393939" stroke-width="2"/>
+                    </svg>                        
+                </div>
+            </div>
+
+            <div class="r-square"></div>
+            <div class="r-square"></div>
+            <div class="r-square"></div>
+            <div class="r-square"></div>
+            <div class="path-bg">
+                <div class="path-bg-el"></div>
+                <div class="path-bg-el"></div>
+                <div class="path-bg-el"></div>
+                <div class="path-bg-el"></div>
+                <div class="path-bg-el"></div>
+                <div class="path-bg-el"></div>
+            </div>
+        </div>
+
+
+        <div class="r-content">
+        <h2>Cuộc sống là
+            quý giá.</h2>
+
+        <p>
+            <span>''</span> Cheap fashion is really far from that. It may be cheap in terms of the financial cost, but very expensive when it comes to the environment and the cost of human life <span>,,</span>
+        </p>
+    </div>
+
+
+    </section>
+    `
+}
+}
+
+
 /* ========================================================================== */
 
 
@@ -250,3 +313,4 @@ customElements.define('nav-bar',Nav_bar);
 customElements.define('hero-sec',Hero_section);
 customElements.define('footer-sec',Footer_section);
 customElements.define('proximity-el',Proximity_comp);
+customElements.define('road-map',RoadMap_comp);
