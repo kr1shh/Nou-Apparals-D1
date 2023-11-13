@@ -8,126 +8,114 @@
 
 
 .route-map{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* background-color: var(--background); */
-    color: white;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.rout-path{
+  position: relative;
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+}
+
 .route-squares{
-    position: relative;
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  width: 250px;
 }
 
-.route-squares .r-square:nth-child(2){
-    position: absolute;
-    top: 0px;
-    left: 36px;
-    width: 100px;
-    height: 100px;
-    background-color: var(--background);
-    border-radius: 20px;
-        box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),5px 5px 6px  #6d6d6d inset;
-    -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66);
 
+
+.r-path-points div, .r-path-points p{
+  position: absolute;
 }
 
-.route-squares .r-square:nth-child(3){
-    position: absolute;
-    top: 306px;
-    left: 190px;
-    width: 100px;
-    height: 100px;
-    background-color: var(--background);
-    border-radius: 20px;
-        box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),5px 5px 6px  #6d6d6d inset;
-    -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66);
-
+.r-path-points div{
+  background-color: var(--lightgreen);
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
 }
 
-.route-squares .r-square:nth-child(4){
-    position: absolute;
-    top: 614px;
-    left: 17px;
-    width: 100px;
-    height: 100px;
-    background-color: var(--background);
-    border-radius: 20px;
-        box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),5px 5px 6px  #6d6d6d inset;
-    -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66);
 
-}
-
-.route-squares .r-square:nth-child(5){
-    position: absolute;
-    top: 1000px;
-    left: 144px;
-    width: 100px;
-    height: 100px;
-    background-color: var(--background);
-    border-radius: 20px;
-        box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),5px 5px 6px  #6d6d6d inset;
-    -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66);
-
-}
 
 .rout-path .r-path{
-    position: absolute;
-    width: 100%;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: var(--background); */
+  width: 250px;
+  display: flex;
+  align-items: center;
 }
 
-.rout-path .r-path svg{
-    width: 250px;
-}
-.rout-path .r-path svg path{
-    stroke: rgb(68, 68, 68);
-    
-}
+.r-square{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  background-color: var(--background);
+  box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),/*inset 16px 21px 20px #3d3d3d*/5px 5px 6px  #6d6d6d inset;
+  -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66);
 
-
-
-.rout-path .r-path-points{
-    position: relative;
-    z-index:5;
 }
 
-.rout-path .r-path-points .r-circle-1 {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-    background-color: var(--lightgreen);
-    top: 140px;
-    right: 52px;
+.r-square:nth-child(2){
+  top: 21px;
+  left: 73px;
 }
 
-.rout-path .r-path-points .r-circle-2 {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-    background-color: var(--lightgreen);
-    top: 477px;
-    right: 147px;
+.r-square:nth-child(3){
+  top: 350px;
+  left: 170px;
 }
 
-.rout-path .r-path-points .r-circle-3 {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-    background-color: var(--lightgreen);
-    top: 855px;
-    right: 256px;
+.r-square:nth-child(4){
+  top: 664px;
+  left: -16px;
 }
 
+.r-square:nth-child(5){
+  top: 1000px;
+  left: 111px;
+}
+
+
+.r-circle-1{
+  top: 207px;
+  left: 234px;
+}
+
+.r-circle-2{
+  top: 540px;
+  left: 85px;
+}
+
+.r-circle-3{
+  top: 887px;
+  left: 13px;
+}
+
+
+.r-para-1{
+  top: 189px;
+  left: 116px;
+  font-size: 11px;
+  width: 111px;
+  text-align: center;
+}
+
+.r-para-2{
+  top: 520px;
+  left: 116px;
+  font-size: 11px;
+  width: 111px;
+  text-align: center; 
+}
+
+.r-para-3{
+  top: 867px;
+  left: 45px;
+  font-size: 11px;
+  width: 111px;
+  text-align: center; 
+}
