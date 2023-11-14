@@ -8,6 +8,17 @@
 
 
 .route-map{
+  position: relative;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  /* margin: 100px 0px 0px 0px; */
+}
+.road-els{
   color: white;
   width: 100%;
   display: flex;
@@ -16,6 +27,7 @@
   flex-direction: column;
   margin: 100px 0px 0px 0px;
 }
+
 
 .rout-path{
   position: relative;
@@ -158,6 +170,118 @@
   display: none;
 }
 
+.path-bg-el:nth-child(2){
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: -136px;
+  left: -165px;
+  border-radius: 50rem;
+  filter: blur(48px);
+  opacity: .2;
+  background-color: white;
+  z-index:-5;
+  animation: scaleOdd 10s infinite linear alternate;
+}
+.path-bg-el:nth-child(3){
+
+  position: absolute;
+    width: 62px;
+    height: 62px;
+    top: 39px;
+    left: 279px;
+    border-radius: 50rem;
+    filter: blur(20px);
+    opacity: .2;
+    background-color: white;
+    z-index:-5;
+    animation: scaleEven 10s infinite linear alternate;
+  
+}
+.path-bg-el:nth-child(4){
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 376px;
+  left: 195px;
+  border-radius: 50rem;
+  filter: blur(6px);
+  opacity: .2;
+  background-color: white;
+  z-index:-5;
+  animation: scaleOdd 10s infinite linear alternate;
+
+}
+.path-bg-el:nth-child(5){
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 617px;
+  left: -10px;
+  border-radius: 50rem;
+  filter: blur(23px);
+  opacity: .2;
+  background-color: white;
+  z-index:-5;
+  animation: scaleEven 10s infinite linear alternate;
+  
+}
+.path-bg-el:nth-child(6){
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 912px;
+  left: 223px;
+  border-radius: 50rem;
+  filter: blur(9px);
+  opacity: .2;
+  background-color: white;
+  z-index:-5;
+  animation: scaleOdd 10s infinite linear alternate;
+
+  
+}
+.path-bg-el:nth-child(7){
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 1004px;
+  left: -229px;
+  border-radius: 50rem;
+  filter: blur(50px);
+  opacity: .2;
+  background-color: white;
+  z-index:-5;
+  animation: scaleEven 10s infinite linear alternate;
+
+}
+
+@keyframes scaleOdd {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.3);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleEven {
+    0%{
+      transform: scale(1.3);
+  }
+  50%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.3);
+  }
+}
+
+
+
 @media (min-width:481px) and (max-width:768px){
   .rout-path .r-path{
     display: none;
@@ -253,6 +377,45 @@
   }
   .r-content p{
     width: 395px;
+  }
+
+
+
+  .path-bg-el:nth-child(2){
+    width: 250px;
+    height: 250px;
+    top: -136px;
+    left: -165px;
+  }
+  .path-bg-el:nth-child(3){
+      width: 62px;
+      height: 62px;
+      top: 39px;
+      left: 715px;
+  }
+  .path-bg-el:nth-child(4){
+    width: 15px;
+    height: 15px;
+    top: 376px;
+    left: 500px;
+  }
+  .path-bg-el:nth-child(5){
+    width: 50px;
+    height: 50px;
+    top: 617px;
+    left: -10px;
+  }
+  .path-bg-el:nth-child(6){
+    width: 20px;
+    height: 20px;
+    top: 912px;
+    left: 615px; 
+  }
+  .path-bg-el:nth-child(7){
+    width: 250px;
+    height: 250px;
+    top: 1004px;
+    left: -80px;
   }
 }
 
@@ -358,10 +521,89 @@
     width: 430px;
   }
 
+
+  .path-bg-el:nth-child(2){
+    width: 250px;
+    height: 250px;
+    top: -136px;
+    left: -165px;
+  }
+  .path-bg-el:nth-child(3){
+      width: 62px;
+      height: 62px;
+      top: 39px;
+      left: 945px;
+  }
+  .path-bg-el:nth-child(4){
+    width: 15px;
+    height: 15px;
+    top: 376px;
+    left: 600px;
+  }
+  .path-bg-el:nth-child(5){
+    width: 50px;
+    height: 50px;
+    top: 617px;
+    left: 140px;
+  }
+  .path-bg-el:nth-child(6){
+    width: 20px;
+    height: 20px;
+    top: 912px;
+    left: 930px; 
+  }
+  .path-bg-el:nth-child(7){
+    width: 250px;
+    height: 250px;
+    top: 1004px;
+    left: -80px;
+  }
+
 }
 
 @media (min-width:1025px){
   .r-content p {
     width: 640px;
 }
+
+
+
+
+.path-bg-el:nth-child(2){
+  width: 250px;
+  height: 250px;
+  top: -136px;
+  left: -165px;
+}
+.path-bg-el:nth-child(3){
+    width: 62px;
+    height: 62px;
+    top: 39px;
+    left: 1390px;
+}
+.path-bg-el:nth-child(4){
+  width: 15px;
+  height: 15px;
+  top: 376px;
+  left: 807px;
+}
+.path-bg-el:nth-child(5){
+  width: 50px;
+  height: 50px;
+  top: 617px;
+  left: 425px;
+}
+.path-bg-el:nth-child(6){
+  width: 20px;
+  height: 20px;
+  top: 912px;
+  left: 1264px; 
+}
+.path-bg-el:nth-child(7){
+  width: 250px;
+  height: 250px;
+  top: 1004px;
+  left: 0px;
+}
+
 }
