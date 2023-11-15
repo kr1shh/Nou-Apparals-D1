@@ -51,8 +51,8 @@
 
 .r-path-points div{
   background-color: var(--lightgreen);
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50px;
 }
 
@@ -418,6 +418,10 @@
     top: 1004px;
     left: -80px;
   }
+  .r-path-points div{
+    width: 25px;
+    height: 25px;
+  }
 }
 
 @media (min-width:769px){
@@ -558,6 +562,10 @@
     height: 250px;
     top: 1004px;
     left: -80px;
+  }
+  .r-path-points div{
+    width: 25px;
+    height: 25px;
   }
 
 }

@@ -117,6 +117,10 @@
     font-weight: 100;
   }
 
+  .about-card .p-desk{
+    display: none;
+  }
+
 
   .about-content .about-hero-img-wrapper{
     position: absolute;
@@ -170,6 +174,10 @@
     .footer-tab img {
       width: 100%;
   }
+
+  .about-card .p-desk{
+    display: inline;
+  }
   
     }
   
@@ -194,13 +202,17 @@
         font-size: 25px;
       }
 
-            .about-content .about-card {
+      .about-content .about-card {
         width: 550px;
+        padding: 0px 10px 10px 10px;
       }
 
 
     .footer-tab img {
       width: 100%;
+  }
+  .about-card .p-desk{
+    display: inline;
   }
   
     }
@@ -229,11 +241,15 @@
 
       .about-content .about-card {
         width: 550px;
+        padding: 0px 10px 10px 10px;
       }
 
 
     .footer-tab img {
       width: 100%;
+  }
+  .about-card .p-desk{
+    display: inline;
   }
   
     }
@@ -262,11 +278,15 @@
 
       .about-content .about-card {
         width: 550px;
+        padding: 0px 10px 10px 10px;
       }
 
 
     .footer-tab img {
       width: 100%;
+  }
+  .about-card .p-desk{
+    display: inline;
   }
   
   
