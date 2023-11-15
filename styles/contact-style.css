@@ -277,6 +277,10 @@ body{
     margin-left: 180px;
   }
 
+  .c-sec-2 .c-sec2-cont p {
+    text-align: center;
+}
+
 }
 
 @media (min-width:1024px) {
@@ -313,22 +317,26 @@ body{
   }
   .c-sec-2 :nth-child(4){
     grid-column: span 2;
-    width: 30%;
+    width: 50%;
   }
   .c-sec-1 .c-sec-cont{
     margin-right: 150px;
   }
 
   .c-sec-2 .c-sec2-contact{
-    width: 250px;
+    width: 350px;
     margin-left: 180px;
   }
   .c-sec-2 .c-sec2-contact input{
-    width: 250px;
+    width: 350px;
   }
   .c-sec-2 .c-sec2-contact textarea{
-    width: 250px;
+    width: 350px;
   } 
+
+  .c-sec-2 .c-sec2-cont p {
+    text-align: center;
+}
 }
 
 @media (min-width:1440px){
@@ -366,7 +374,7 @@ body{
   }
   .c-sec-2 :nth-child(4){
     grid-column: span 2;
-    width: 60%;
+    width: 40%;
   }
   .c-sec-1 .c-sec-cont{
     margin-right: 150px;
@@ -376,4 +384,8 @@ body{
     width: 250px;
     margin-left: 285px;
   }
+
+  .c-sec-2 .c-sec2-cont p {
+    text-align: center;
+}
 }
