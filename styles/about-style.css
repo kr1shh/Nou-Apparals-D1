@@ -175,6 +175,10 @@
       width: 100%;
   }
 
+  .about-content .about-des{
+    width: 60%;
+  }
+
   .about-card .p-desk{
     display: inline;
   }
@@ -211,6 +215,11 @@
     .footer-tab img {
       width: 100%;
   }
+
+  .about-content .about-des{
+    width: 60%;
+  }
+
   .about-card .p-desk{
     display: inline;
   }
@@ -248,6 +257,10 @@
     .footer-tab img {
       width: 100%;
   }
+
+  .about-content .about-des{
+    width: 60%;
+  }
   .about-card .p-desk{
     display: inline;
   }
@@ -284,6 +297,10 @@
 
     .footer-tab img {
       width: 100%;
+  }
+
+  .about-content .about-des{
+    width: 60%;
   }
   .about-card .p-desk{
     display: inline;
