@@ -295,11 +295,12 @@ class RoadMap_comp extends HTMLElement{
     </div>
 
     <div class="r-content">
-        <h2>Cuộc sống là
-            quý giá.</h2>
+        <h2>
+            <span class="type-anim"></span>
+        </h2>
         <p>
-            <span>''</span> Cheap fashion is really far from that. It may be cheap in terms of the financial cost, but
-            very expensive when it comes to the environment and the cost of human life <span>,,</span>
+            <span class="p-coma">''</span> Cheap fashion is really far from that. It may be cheap in terms of the financial cost, but
+            very expensive when it comes to the environment and the cost of human life <span class="p-coma">,,</span>
         </p>
     </div>
 </div>
