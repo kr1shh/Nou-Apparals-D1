@@ -164,6 +164,14 @@
   color: var(--lightgreen);
 }
 
+
+.typed-cursor {
+  color: var(--lightgreen);
+  font-size: 28px;
+  font-family: 'helvetica';
+}
+
+
 .r-content h2{
   width: 195px;
     margin: 20px 0px 0px 0px;
