@@ -328,10 +328,10 @@ body{
     margin-left: 180px;
   }
   .c-sec-2 .c-sec2-contact input{
-    width: 350px;
+    width: 235px;
   }
   .c-sec-2 .c-sec2-contact textarea{
-    width: 350px;
+    width: 235px;
   } 
 
   .c-sec-2 .c-sec2-cont p {
@@ -340,11 +340,25 @@ body{
 }
 
 @media (min-width:1440px){
+
+  .sec-1-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sec-2-items{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   .c-sec-1{
+    width: 80%;
     flex-direction: row;
   }
   .c-sec-2{
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2,0fr);
@@ -352,7 +366,7 @@ body{
   }
 
   .c-sec-1 img {
-    width: 30%;
+    width: 40%;
   }
 
 
@@ -361,7 +375,7 @@ body{
 
   }
   .c-sec-2 :nth-child(1) img{
-    width: 40%;
+    width: 50%;
   }
   .c-sec-2 :nth-child(2){
     grid-column: 1;
