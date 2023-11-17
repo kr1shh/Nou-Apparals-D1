@@ -1,7 +1,7 @@
 @import url(../styles/style.css);
 
 :root{
-    --background:#202020;
+    --background:#0c0c0c;
     --lightgreen:#6FB444;
     --darkgreen:#122903;
   }
@@ -72,7 +72,7 @@ body{
   border: 0px;
 }
 .c-sec-cont p{
-  padding-left: 10px;
+  padding-left: 40px;
 }
 
 
@@ -108,7 +108,7 @@ body{
 }
 .c-sec-2 .c-sec2-img img{
   width: 80%;
-  mix-blend-mode:lighten;
+  /* mix-blend-mode:lighten; */
 }
 
 .c-sec-2 .c-sec2-contact{
@@ -354,11 +354,11 @@ body{
   }
   
   .c-sec-1{
-    width: 80%;
+    width: 75%;
     flex-direction: row;
   }
   .c-sec-2{
-    width: 80%;
+    width: 75%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2,0fr);
@@ -367,6 +367,7 @@ body{
 
   .c-sec-1 img {
     width: 40%;
+    margin-left: 150px;
   }
 
 
