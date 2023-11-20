@@ -80,7 +80,7 @@
             </div>
 
 
-            <button onclick="sendMsg()">
+            <button id="contact">
                 SEND
             </button>
 
@@ -111,6 +111,11 @@
 
 
         <script>
+
+
+//============================ Email_JS for question ================================== 
+
+
             document.getElementById("know").addEventListener("click", function (e) {
               e.preventDefault();
               console.log("working");
@@ -118,11 +123,9 @@
               var message = document.getElementById("know-msg").value;
         
               if ( !message ) {
-                alert("Please fill out all the required fields.");
+                alert("Please fill out all fields.");
                 return;
               }
-        
-        
               var params = {
                 message: document.getElementById("know-msg").value,
               };
@@ -138,6 +141,44 @@
                 )
                 .catch((err) => console.log(err));
             })
+
+
+//=====================================================================================
+
+//============================ Email_JS for Contact ================================== 
+
+
+            document.getElementById("contact").addEventListener("click", function (e) {
+              e.preventDefault();            
+              var params = {
+                name: document.getElementById("name").value,
+                message: document.getElementById("msg").value,
+                email: document.getElementById("email").value
+            };
+
+            if(!params.name || !params.message || !params.email){
+                alert("Please fill out all the fields.")
+                return;
+            }
+
+            const serviceID = "service_4pnj8pq";
+            const templateID = "template_q6yksk4";
+            emailjs.send(serviceID, templateID, params)
+                .then(
+                    res => {
+                        document.getElementById("name").value = "";
+                        document.getElementById("message").value = "";
+                        document.getElementById("email").value = "";
+                        console.log(res);
+                        alert("Your message send successfully !");
+                    }
+                )
+                .catch((err) => console.log(err));
+        })
+
+
+//====================================================================================
+
           </script>
 
         <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
