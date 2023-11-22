@@ -41,28 +41,28 @@
         <section class="about-content">
             <div class="about-cards">
                 <div data-aos="fade-in" class="about-card">
-                    <h2 data-aos="fade-in">Innovation</h2>
+                    <h2 data-aos="fade-in">Innovation <span class="p-desk"> at the Core </span></h2>
                     <p data-aos="fade-in">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        At NOU Apparels, innovation is woven into the very fabric of our identity. Our journey began with a pioneering spirit, seeking to revolutionize the apparel industry by marrying ancient weaving techniques with contemporary structures.
                         <span class="p-desk">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            Innovation is not just a buzzword for us; it's a guiding principle that propels us forward. From the inception of our brand, we've been committed to pushing boundaries, exploring uncharted waters, and redefining what's possible in the world of fashion. Our dedication to innovation extends beyond design to embrace sustainable practices, creating a unique blend that sets us apart in the industry.
                         </span>
                     </p>
+                    <button class="m-btn" onclick="popUp(1)">
+                        KNOW MORE
+                    </button>
                 </div>
                 <div data-aos="fade-in" class="about-card">
-                    <h2 data-aos="fade-in">Startup</h2>
+                    <h2 data-aos="fade-in">Sustainability <span class="p-desk"> in Every Stitch </span></h2>
                     <p data-aos="fade-in">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        Sustainability is more than a commitment at NOU Apparels; it's a thread that runs through the very essence of our brand. In our second stage of growth, sustainability became a focal point in our journey.
                         <span class="p-desk">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            We integrated eco-friendly practices into our core business functions, meticulously assessing our supply chain, and establishing partnerships with suppliers who share our vision. Our products are not just about style; they are about crafting sustainable fashion that leaves a positive impact. Certifications and standards became not just accolades but a testament to our dedication to responsible and ethical manufacturing. Our commitment to sustainability is a journey that continues to evolve, ensuring our clothing reflects the values we hold dear.
                         </span>
                     </p>
+                    <button class="m-btn" onclick="popUp(2)">
+                        KNOW MORE
+                    </button>
                 </div>
             </div>
             <div data-aos="fade-in" class="about-des">
@@ -74,6 +74,37 @@
             <div class="about-hero-img-wrapper">
             <img data-aos="slide-right" src="../assets/images/Sou.png" alt="char" loading="lazy">
         </div>
+        </section>
+
+
+        <section>
+            <div class="pop-container">
+                <div class="pop-1">
+                    <button onclick="popClose(1)">
+                        <div></div>
+                        <div></div>
+                    </button>
+                    <h2>
+                        Innovation at the Core
+                    </h2>
+                    <p>
+                        At NOU Apparels, innovation is woven into the very fabric of our identity. Our journey began with a pioneering spirit, seeking to revolutionize the apparel industry by marrying ancient weaving techniques with contemporary structures. Innovation is not just a buzzword for us; it's a guiding principle that propels us forward. From the inception of our brand, we've been committed to pushing boundaries, exploring uncharted waters, and redefining what's possible in the world of fashion. Our dedication to innovation extends beyond design to embrace sustainable practices, creating a unique blend that sets us apart in the industry.
+                    </p>
+                </div>
+
+                <div class="pop-2" onclick="popClose(2)">
+                    <button>
+                        <div></div>
+                        <div></div>
+                    </button>
+                    <h2>
+                        Sustainability in Every Stitch
+                    </h2>
+                    <p>
+                        Sustainability is more than a commitment at NOU Apparels; it's a thread that runs through the very essence of our brand. In our second stage of growth, sustainability became a focal point in our journey. We integrated eco-friendly practices into our core business functions, meticulously assessing our supply chain, and establishing partnerships with suppliers who share our vision. Our products are not just about style; they are about crafting sustainable fashion that leaves a positive impact. Certifications and standards became not just accolades but a testament to our dedication to responsible and ethical manufacturing. Our commitment to sustainability is a journey that continues to evolve, ensuring our clothing reflects the values we hold dear.
+                    </p>
+                </div>
+            </div>
         </section>
 
 
@@ -97,6 +128,47 @@
             duration: 1000,
           });
         </script> -->
+
+    <script>
+
+            let popCardContainer = document.querySelector(".pop-container")
+            let popUpCard1 = document.querySelector(".pop-1")
+            let popUpCard2 = document.querySelector(".pop-2")
+
+            function popUp(n){
+                if(n===1){
+                    popCardContainer.style.display = "block"
+                    popUpCard1.style.display = "flex"
+                    popUpCard2.style.display = "none"
+                }
+                else if(n==2){
+                    popCardContainer.style.display = "block"
+                    popUpCard2.style.display = "flex"
+                    popUpCard1.style.display = "none"
+                }
+                else{
+                    popCardContainer.style.display = "none"
+                }
+            }
+
+
+            function popClose(n){
+                if(n === 1){
+                    popUpCard1.style.display = "none"
+                    popCardContainer.style.display = "none"
+                }
+                else if(n===2){
+                    popUpCard2.style.display = "none"
+                    popCardContainer.style.display = "none"
+                }
+                else{
+                    popCardContainer.style.display = "none"
+                }
+
+            }
+
+    </script>
+
     <script src="../components/components.js"></script>
     <script src="../scripts/footerbg-script.js"></script>
     <script src="../scripts/script.js"></script>
