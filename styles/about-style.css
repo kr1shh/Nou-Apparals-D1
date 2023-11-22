@@ -115,6 +115,12 @@ body {
   font-family: 'helvetica';
 }
 
+.about-content .about-des h2 span{
+  color: var(--lightgreen);
+  font-size:18px ;
+  display: none;
+}
+
 .about-content .about-des p {
   margin: 0px 0px 90px 0px;
   /* color: var(--lightgreen); */
@@ -337,6 +343,9 @@ body {
 
 
 @media (min-width:481px) and (max-width:768px) {
+  .about-content .about-des h2 span{
+    display: inline;
+  }
 
   .about-content .about-hero-img-wrapper {
     right: 65%;
@@ -379,6 +388,9 @@ body {
 }
 
 @media (min-width:769px) and (max-width:1024px) {
+  .about-content .about-des h2 span{
+    display: inline;
+  }
 
   .about-content .about-hero-img-wrapper {
     top: 122%;
@@ -424,6 +436,9 @@ body {
 }
 
 @media (min-width:1025px) and (max-width:1440px) {
+  .about-content .about-des h2 span{
+    display: inline;
+  }
 
   .about-content .about-hero-img-wrapper {
     right: 65%;
@@ -470,6 +485,10 @@ body {
 }
 
 @media (min-width:1441px) {
+
+  .about-content .about-des h2 span{
+    display: inline;
+  }
 
   .about-content .about-hero-img-wrapper {
     right: 65%;
