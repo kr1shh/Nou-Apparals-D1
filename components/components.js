@@ -253,15 +253,24 @@ class RoadMap_comp extends HTMLElement{
         <div class="rout-path">
             <div class="r-path-points">
                 <p class="r-para-1">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, sequi.
+                    <span style="font-size: 14px;
+                        font-weight: 600;">Foundation</span><br />
+                    In the initial stage, the focus is on establishing the foundational elements of
+                    sustainability within NOU Apparels.
                 </p>
                 <div class="r-circle-1"></div>
                 <p class="r-para-2">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, sequi.
+                    <span style="font-size: 14px;
+                        font-weight: 600;">Growth and Integration</span><br />
+                    In the second stage, the focus shifts toward integrating sustainability into core business
+                    functions and expanding efforts.
                 </p>
                 <div class="r-circle-2"></div>
                 <p class="r-para-3">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, sequi.
+                    <span style="font-size: 14px;
+                        font-weight: 600;">Full Sustainability</span><br />
+                    In the final stage, NOU Apparels achieves full sustainability by embedding eco-friendly
+                    practices throughout the entire business model.
                 </p>
                 <div class="r-circle-3"></div>
             </div>
@@ -288,10 +297,18 @@ class RoadMap_comp extends HTMLElement{
             </div>
         </div>
 
-        <div class="r-square"></div>
-        <div class="r-square"></div>
-        <div class="r-square"></div>
-        <div class="r-square"></div>
+            <div class="r-square">
+                <img src="../assets/images/Plant01.png" alt="">
+            </div>
+            <div class="r-square">
+                <img src="../assets/images/Plant02.png" alt="">
+            </div>
+            <div class="r-square">
+                <img src="../assets/images/Plant03.png" alt="">
+            </div>
+            <div class="r-square">
+                <img src="../assets/images/Plant04.png" alt="">
+            </div>
     </div>
 
     <div class="r-content">

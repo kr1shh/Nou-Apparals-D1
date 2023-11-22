@@ -46,7 +46,7 @@
 .r-path-points div, .r-path-points p{
   position: absolute;
   font-family: 'helveticathin';
-  font-size: 15px;
+  font-size: 11px;
 }
 
 .r-path-points div{
@@ -67,28 +67,32 @@
 
 .r-square{
   position: absolute;
-  width: 90px;
-  height: 90px;
-  border-radius: 20px;
+  width: 160px;
+  /* height: 90px; */
+  /* border-radius: 20px;
   background-color: var(--background);
-  box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),/*inset 16px 21px 20px #3d3d3d*/5px 5px 6px  #6d6d6d inset;
-  -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66);
+  box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66), 5px 5px 6px  #6d6d6d inset;
+  -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66); */
+}
 
+.r-square img{
+  object-fit: cover;
+  width: 100%;
 }
 
 .r-square:nth-child(2){
-  top: 21px;
-  left: 73px;
+  top: -33px;
+  left: 8px;
 }
 
 .r-square:nth-child(3){
-  top: 350px;
-  left: 170px;
+  top: 313px;
+  left: 101px;
 }
 
 .r-square:nth-child(4){
   top: 664px;
-  left: -16px;
+  left: -38px;
 }
 
 .r-square:nth-child(5){
@@ -115,25 +119,25 @@
 
 .r-para-1{
   top: 189px;
-  left: 116px;
+  left: 4px;
   font-size: 11px;
-  width: 111px;
+  width: 232px;
   text-align: center;
 }
 
 .r-para-2{
   top: 520px;
-  left: 116px;
+  left: 113px;
   font-size: 11px;
-  width: 111px;
+  width: 158px;
   text-align: center; 
 }
 
 .r-para-3{
-  top: 867px;
-  left: 45px;
+  top: 844px;
+  left: 54px;
   font-size: 11px;
-  width: 111px;
+  width: 194px;
   text-align: center; 
 }
 
@@ -311,33 +315,33 @@
 
   .r-square{
     position: absolute;
-    width: 150px;
-    height: 150px;
-    border-radius: 20px;
+    width: 200px;
+    /* height: 150px; */
+    /* border-radius: 20px;
     background-color: var(--background);
-    box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),/*inset 16px 21px 20px #3d3d3d*/5px 5px 6px  #6d6d6d inset;
-    -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66);
+    box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),5px 5px 6px  #6d6d6d inset;
+    -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66); */
   
   }
   
   .r-square:nth-child(2){
-    top: -41px;
-    left: -122px;
+    top: -107px;
+    left: -176px;
   }
   
   .r-square:nth-child(3){
-    top: 350px;
-    left: 170px;
+    top: 237px;
+    left: 186px;
   }
   
   .r-square:nth-child(4){
-    top: 664px;
-    left: -130px;
+    top: 596px;
+    left: -166px;
   }
   
   .r-square:nth-child(5){
-    top: 1000px;
-    left: 111px;
+    top: 928px;
+    left: 136px;
   }
   
   
@@ -359,9 +363,9 @@
   
   .r-para-1{
     top: 158px;
-    left: 133px;
+    left: 55px;
     font-size: 11px;
-    width: 111px;
+    width: 202px;
     text-align: center;
   }
   
@@ -369,15 +373,15 @@
     top: 530px;
     left: 81px;
     font-size: 11px;
-    width: 111px;
+    width: 214px;
     text-align: center; 
   }
   
   .r-para-3{
-    top: 835px;
+    top: 850px;
     left: 45px;
     font-size: 11px;
-    width: 111px;
+    width: 227px;
     text-align: center; 
   }
   .r-content{
@@ -453,34 +457,34 @@
 
   .r-square{
     position: absolute;
-    width: 150px;
-    height: 150px;
-    border-radius: 20px;
+    width: 250px;
+    /* height: 150px; */
+    /* border-radius: 20px;
     background-color: var(--background);
-    box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),/*inset 16px 21px 20px #3d3d3d*/5px 5px 6px  #6d6d6d inset;
-    -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66);
+    box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66),5px 5px 6px  #6d6d6d inset;
+    -moz-box-shadow: 10px 12px 10px -5px rgba(0,0,0,0.66); */
   
   }
   
   .r-square:nth-child(2){
-    top: -57px;
-    left: -200px;
+    top: -129px;
+    left: -293px;
   }
   
   .r-square:nth-child(3){
-    top: 278px;
-    left: 273px;
+    top: 199px;
+    left: 283px;
     z-index: -1;
   }
   
   .r-square:nth-child(4){
-    top: 625px;
-    left: -243px;
+    top: 527px;
+    left: -246px;
   }
   
   .r-square:nth-child(5){
-    top: 925px;
-    left: 191px;
+    top: 848px;
+    left: 233px;
   }
   
   
@@ -502,9 +506,9 @@
   
   .r-para-1{
     top: 158px;
-    left: 66px;
+    left: -12px;
     font-size: 11px;
-    width: 111px;
+    width: 224px;
     text-align: center;
   }
   
@@ -512,15 +516,15 @@
     top: 480px;
     left: 81px;
     font-size: 11px;
-    width: 111px;
+    width: 223px;
     text-align: center; 
   }
   
   .r-para-3{
-    top: 816px;
-    left: 25px;
+    top: 834px;
+    left: 16px;
     font-size: 11px;
-    width: 111px;
+    width: 229px;
     text-align: center; 
   }
   .r-content{
