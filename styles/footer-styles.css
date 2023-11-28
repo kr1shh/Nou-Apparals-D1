@@ -277,7 +277,7 @@
 }
 
 
-@media (min-width: 1025px) and (max-width: 1600px) {
+@media (min-width: 1025px) {
     .footer-container{
         flex-direction: row;
         position: relative;
