@@ -258,7 +258,7 @@
       }
 }
 
-@media (min-width: 1025px) and (max-width: 1600px) {
+@media (min-width: 1025px) {
     .blog-cards .single-row {
         display: flex; 
         flex-direction: row;
