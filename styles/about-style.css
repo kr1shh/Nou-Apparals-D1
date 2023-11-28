@@ -541,7 +541,11 @@ body {
 
   .about-hero .about-hero-img-wrapper {
     right: -20%;
-    width: 50%;
+    width: 40%;
+  }
+
+  .about-hero .about-hero-img-wrapper img {
+    width: 85%;
   }
 
   .about-hero p span {
