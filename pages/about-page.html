@@ -168,6 +168,20 @@
 
             }
 
+
+            document.addEventListener("DOMContentLoaded", () => {
+                let scrollDown = document.querySelector(".about-scroll");
+
+                window.addEventListener("scroll", () => {
+                    if (window.scrollY > 20) {
+                        scrollDown.style.opacity = "0";
+                    } else {
+                        scrollDown.style.opacity = "1";
+                    }
+                });
+            });
+
+
     </script>
 
     <script src="../components/components.js"></script>
