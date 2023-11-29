@@ -173,8 +173,12 @@ class Footer_section extends HTMLElement {
                             </div>
                         </div>
                         <div class="footer-bg">
-                            <img src="../assets/images/charectorimg.png" alt="charecter" loading="lazy">
+                        <!-- <img src="../assets/images/charectorimg.png" alt=""> -->
+                        <video src="../assets/images/FooterVid.mp4" autoplay muted loop></video>
+                        <div class="footer-copy">
+                            <p>&copy; NOU APPARELS PVT LTD.</p>
                         </div>
+                    </div>
                     </div>
                 </footer>
       `
