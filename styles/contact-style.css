@@ -163,7 +163,15 @@ body{
   margin: 20px 0px 0px 0px;
   font-family: 'helveticabold';
   font-size: 10px;
+  border: solid 1px var(--lightgreen);
+  background-color: transparent;
+  color: var(--lightgreen);
+  transition: all .3s;
+}
+
+.c-sec-2 button:hover{
   background-color: var(--lightgreen);
+  color: white;
 }
 
 

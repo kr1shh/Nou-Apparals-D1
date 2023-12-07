@@ -133,7 +133,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--lightgreen);
-    color: var(--background);
+    color: white;
 }
 .footer-copy p{
     font-size: 10px;
@@ -185,7 +185,7 @@
         gap: 0px;
         flex-direction: column;
         top: 13px;
-        margin-right: 9px;
+        margin-right: 1px;
     }
     .footer-container .footer-sections h2 {
         font-family: 'helveticaBold';
@@ -247,15 +247,15 @@
     } 
 
     .footer-container .footer-bg .lottie_comp {
-        width: 256px;
-        margin: 64px 180px;
+        width: 190px;
+        margin: 103px 149px;
     }
 
 
 }
 
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px){
     .footer-container{
         flex-direction: row;
         position: relative;
@@ -267,20 +267,9 @@
         justify-content: end;
         gap: 30px;
         color: white;
-        /* background-color: aquamarine; */
     }
 
     
-
-    /* .footer-container .footer-bg {
-        position: absolute;
-        width: 100%;
-        height: auto;
-        top: 0;
-        left: 0;
-        z-index: 5;
-        background-color: black;
-    } */
     .footer-container .footer-sections:nth-child(3) .footer-icons{
         display: flex;
         flex-direction: row;
@@ -300,7 +289,6 @@
         position: absolute;
         bottom: 0;
         left: 15%;
-        /* transform: translateX(-50%); */
         width: 300px;
         height: 300px;
     } 
@@ -317,28 +305,15 @@
     .footer-container{
         flex-direction: row;
         position: relative;
-        /* width: 100%; */
         height: 25rem;
         display: flex;
         padding-left: 0px;
-        /* padding-top: 0px; */
         justify-content: end;
-        gap: 30px;
+        gap: 0px;
         color: white;
-        /* background-color: aquamarine; */
     }
 
     
-
-    /* .footer-container .footer-bg {
-        position: absolute;
-        width: 100%;
-        height: auto;
-        top: 0;
-        left: 0;
-        z-index: 5;
-        background-color: black;
-    } */
     .footer-container .footer-sections:nth-child(3) .footer-icons{
         display: flex;
         flex-direction: row;
@@ -351,20 +326,19 @@
         gap: 0px;
         flex-direction: column;
         top: 30px;
-        margin-right: 115px;
+        margin-right: 60px;
     }
 
     .footer-container .footer-bg video{
         position: absolute;
         bottom: 0;
         left: 20%;
-        /* transform: translateX(-50%); */
         width: 400px;
         height: 400px;
     } 
 
     .footer-container .footer-bg .lottie_comp{
         width: 300px;
-        margin: 56px 263px;
+        margin: 57px 210px;
     }
 }

@@ -64,6 +64,14 @@
     margin-top: 10px;
     margin-bottom: 80px;
     font-family:sans-serif;
+    background-color: white;
+    color: var(--lightgreen);
+    transition: all .3s;
+}
+
+.blog-hero button:hover{
+    background-color:#ff0022;
+    color: white;
 }
 
 /* ========================================= */
@@ -145,8 +153,8 @@
     margin-bottom: 18px;
     margin-top: 5px;
     font-family: 'helvetica';
-    background-color: var(--lightgreen);
-    color: white;
+    background-color: white;
+    color: var(--lightgreen);
     transition: all .3s;
     cursor: pointer;
 }
@@ -159,8 +167,8 @@
 } */
 
 .blog-cards .blog-card button:hover{
-    color: var(--lightgreen);
-    background-color: white;
+    color: white;
+    background-color: var(--lightgreen);
     border-color: var(--lightgreen);
 }
 
@@ -212,7 +220,13 @@
     margin-top: 10px;
     font-family: 'helvetica';
     background-color: white;
-    color: black;
+    color: var(--lightgreen);
+    transition: all .3s;
+}
+
+.blog-l-card button:hover{
+    background-color: var(--lightgreen);
+    color: white;
 }
 
 .blog-cards .single-row {

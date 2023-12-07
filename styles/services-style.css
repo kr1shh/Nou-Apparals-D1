@@ -80,9 +80,15 @@
     width: 120px;
     height: 30px;
     border-radius: 50px;
-    border: 0;
+    border: solid 1px var(--lightgreen);
     margin: -7px 0px 25px 0px;
-    background-color: #292929;
+    background-color: transparent;
+    color: var(--lightgreen);
+    transition: all .3s ease-in-out;
+  }
+
+  .s-sec1-card button:hover{
+    background-color: var(--lightgreen);
     color: white;
   }
 
