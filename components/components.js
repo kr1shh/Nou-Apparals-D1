@@ -174,7 +174,11 @@ class Footer_section extends HTMLElement {
                         </div>
                         <div class="footer-bg">
                         <!-- <img src="../assets/images/charectorimg.png" alt=""> -->
-                        <video src="../assets/images/FooterVid.mp4" autoplay muted loop></video>
+                        <!-- <video src="../assets/images/FooterVid.mp4" autoplay muted loop></video> -->
+                        <div 
+                            class="lottie_comp" 
+                            id="lottie"
+                        ></div>
                         <div class="footer-copy">
                             <p>&copy; NOU APPARELS PVT LTD.</p>
                         </div>
@@ -350,3 +354,23 @@ customElements.define('hero-sec',Hero_section);
 customElements.define('footer-sec',Footer_section);
 customElements.define('proximity-el',Proximity_comp);
 customElements.define('road-map',RoadMap_comp);
+
+
+
+
+
+
+/* =============== Lottie ============ */
+
+
+document.addEventListener("DOMContentLoaded",()=>{
+    var animation = bodymovin.loadAnimation({
+        container: document.getElementById('lottie'),
+        path: '../assets/Events/ChristmasTree.json', 
+        renderer: 'svg',
+        loop: true, 
+        autoplay: true, 
+        })
+
+        animation.play();
+})

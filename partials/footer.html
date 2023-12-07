@@ -104,13 +104,31 @@
             </div>
             <div class="footer-bg">
                 <!-- <img src="../assets/images/charectorimg.png" alt=""> -->
-                <video src="../assets/images/FooterVid.mp4" autoplay muted loop></video>
+                <!-- <video src="../assets/images/FooterVid.mp4" autoplay muted loop></video> -->
+                <div 
+                class="lottie_comp" 
+                id="lottie"
+                ></div>
                 <div class="footer-copy">
                     <p>&copy; NOU APPARELS PVT LTD.</p>
                 </div>
             </div>
         </div>
     </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../scripts/footerbg-script.js"></script>
+    <script>
+        var animation = bodymovin.loadAnimation({
+        container: document.getElementById('lottie'),
+        path: '../assets/Events/ChristmasTree.json', 
+        renderer: 'svg',
+        loop: true, 
+        autoplay: true, 
+        })
+
+        animation.play();
+    </script>
 </body>
 </html>
