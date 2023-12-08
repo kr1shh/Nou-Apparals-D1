@@ -390,15 +390,36 @@ customElements.define('road-map',RoadMap_comp);
 
 /* =============== Lottie ============ */
 
-
 document.addEventListener("DOMContentLoaded",()=>{
-    var animation = bodymovin.loadAnimation({
-        container: document.getElementById('lottie'),
-        path: '../assets/Events/ChristmasTree.json', 
-        renderer: 'svg',
-        loop: true, 
-        autoplay: true, 
-        })
+    function startAnimation() {
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('lottie'),
+            path: '../assets/Events/ChristmasTree.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+        });
 
         animation.play();
+    }
+
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5 
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                startAnimation(); 
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, options);
+
+    const lottieElement = document.getElementById('lottie');
+    observer.observe(lottieElement);
 })
+
+        
