@@ -168,10 +168,10 @@ body {
   }
   
   .bg-circle {
-    background-color: #FFFFFF;
-    opacity: 0.2; 
+    /* background-color: #FFFFFF; */
+    opacity: 0.05; 
     transition: all .3s;
-    animation: moveScale 10s infinite linear alternate;
+    animation: moveScale 10s infinite linear, rotateForward 30s infinite linear;
   }
   
   @keyframes moveScale {
@@ -185,6 +185,15 @@ body {
       transform: translateY(0) scale(.9);
     }
   }
+
+  @keyframes rotateForward{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+  }
   
   /* Circle styles (assuming you want to keep them within the .mob-nav-bg container) */
   .bg-circle:nth-child(1) {
@@ -194,7 +203,7 @@ body {
     width: 16rem;
     height: 16rem;
     border-radius: 20rem;
-    filter: blur(70px);
+    /* filter: blur(70px); */
   }
   
   .bg-circle:nth-child(2) {
@@ -204,27 +213,27 @@ body {
     height: 5rem;
     width: 5rem;
     border-radius: 10rem;
-    filter: blur(25px);
+    /* filter: blur(25px); */
   }
   
   .bg-circle:nth-child(3) {
     position: absolute;
     top: 489px;
     left: 478px;
-    width: 1rem;
-    height: 1rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 10rem;
-    filter: blur(10px);
+    /* filter: blur(10px); */
   }
   
   .bg-circle:nth-child(4) {
     position: absolute;
     top: 486px;
-    left: 33px;
+    /* left: 33px; */
     width: 6rem;
     height: 6rem;
     border-radius: 10rem;
-    filter: blur(21px);
+    /* filter: blur(21px); */
   }
 
 
@@ -251,7 +260,7 @@ body {
         width: 10rem;
         height: 10rem;
         border-radius: 20rem;
-        filter: blur(45px);
+        /* filter: blur(45px); */
         }
 
         .bg-circle:nth-child(2) {
@@ -261,7 +270,7 @@ body {
             height: 5rem;
             width: 5rem;
             border-radius: 10rem;
-            filter: blur(20px);
+            /* filter: blur(20px); */
         }
 
         .bg-circle:nth-child(3) {
@@ -271,7 +280,7 @@ body {
         width: 1rem;
         height: 1rem;
         border-radius: 10rem;
-        filter: blur(10px);
+        /* filter: blur(10px); */
         }
 
         .bg-circle:nth-child(4) {
@@ -281,7 +290,7 @@ body {
         width: 4rem;
         height: 4rem;
         border-radius: 10rem;
-        filter: blur(21px);
+        /* filter: blur(21px); */
         }
 }
 

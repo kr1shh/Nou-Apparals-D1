@@ -67,10 +67,18 @@ class Nav_bar extends HTMLElement {
 
               <div class="mob-nav-bg">
                     <!-- <img src="../assets/images/bgels.svg" alt="" class="bg-circle"> -->
-                    <div class="bg-circle"></div>
-                    <div class="bg-circle"></div>
-                    <div class="bg-circle"></div>
-                    <div class="bg-circle"></div>
+                    <div class="bg-circle">
+                        <img src="../assets/images/SnowFlake.svg" alt="Bg Els">
+                    </div>
+                    <div class="bg-circle">
+                        <img src="../assets/images/SnowFlake.svg" alt="Bg Els">
+                    </div>
+                    <div class="bg-circle">
+                        <img src="../assets/images/SnowFlake.svg" alt="Bg Els">
+                    </div>
+                    <div class="bg-circle">
+                        <img src="../assets/images/SnowFlake.svg" alt="Bg Els">
+                    </div>
                 </div>
           </div>
       </nav>
