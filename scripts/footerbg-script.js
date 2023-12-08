@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const img = document.querySelector(".footer-bg");
+  const img = document.querySelector(".footer-container");
 
   function updateImageSource() {
     const screenWidth = window.innerWidth;
 
     if (screenWidth > 480) {
-      img.style.backgroundImage = "../assets/images/footerbgDesktop.jpg";
+      img.style.backgroundImage = "url(../assets/images/footerbgDesktop.jpg)";
     } else {
-      img.style.backgroundImage = "../assets/images/footerbg.jpg";
+      img.style.backgroundImage = "url(../assets/images/footerbg.jpg)";
     }
   }
 
