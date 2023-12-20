@@ -1,14 +1,10 @@
-
 /* =================== Custom elements ==================== */
-
-
 
 /* ===================== General Components ==================== */
 
-
 class Nav_bar extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <div class="nav-container">
       <nav>
           <div class="nav-logo">
@@ -85,14 +81,12 @@ class Nav_bar extends HTMLElement {
   </div>
 
       `;
-    }
+  }
 }
 
-
-
 class Footer_section extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <footer>
       <div class="footer-container">
           <div class="footer-section">
@@ -189,23 +183,17 @@ class Footer_section extends HTMLElement {
           </div>
       </div>
   </footer>
-      `
-    }
+      `;
+  }
 }
-
-
 
 /* ============================================================= */
 
-
-
 /* ====================== Home Page Components ============================== */
 
-
-
 class Hero_section extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
     <main>
       <div class="hero-container">
           <div class="hero-text">
@@ -215,15 +203,11 @@ class Hero_section extends HTMLElement {
           <img id="hero-bg" src="../assets/images/Hero-Mobile.jpg" alt="hero" loading="lazy">
       </div>
     </main>
-      `
-    }   
+      `;
+  }
 }
 
-
-
-
 /* ========================================================================== */
-
 
 /* ====================== Proximity Components ============================== */
 
@@ -247,15 +231,13 @@ class Proximity_comp extends HTMLElement {
 
             </div>
         </div>
-    `
+    `;
   }
 }
 
-
-
-class RoadMap_comp extends HTMLElement{
-    connectedCallback(){
-    this.innerHTML=`
+class RoadMap_comp extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
     <section class="route-map">
     <div class="road-els">
 
@@ -366,60 +348,50 @@ class RoadMap_comp extends HTMLElement{
 </div>
 
 </section>
-    `
+    `;
+  }
 }
-}
-
 
 /* ========================================================================== */
 
-
-
 /* ================= Defining all custom elements ================ */
 
-customElements.define('nav-bar',Nav_bar);
-customElements.define('hero-sec',Hero_section);
-customElements.define('footer-sec',Footer_section);
-customElements.define('proximity-el',Proximity_comp);
-customElements.define('road-map',RoadMap_comp);
-
-
-
-
-
+customElements.define("nav-bar", Nav_bar);
+customElements.define("hero-sec", Hero_section);
+customElements.define("footer-sec", Footer_section);
+customElements.define("proximity-el", Proximity_comp);
+customElements.define("road-map", RoadMap_comp);
 
 /* =============== Lottie ============ */
 
-document.addEventListener("DOMContentLoaded",()=>{
-    function startAnimation() {
-        var animation = bodymovin.loadAnimation({
-            container: document.getElementById('lottie'),
-            path: '../assets/Events/ChristmasTree.json',
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-        });
+document.addEventListener("DOMContentLoaded", () => {
+  function startAnimation() {
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById("lottie"),
+      path: "../assets/Events/ChristmasTree.json",
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+    });
 
-        animation.play();
-    }
+    animation.play();
+  }
 
-    const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.5 
-    };
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5,
+  };
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                startAnimation(); 
-                observer.unobserve(entry.target); 
-            }
-        });
-    }, options);
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        startAnimation();
+        observer.unobserve(entry.target);
+      }
+    });
+  }, options);
 
-    const lottieElement = document.getElementById('lottie');
-    observer.observe(lottieElement);
-})
-
-        
+  const lottieElement = document.getElementById("lottie");
+  observer.observe(lottieElement);
+});
