@@ -169,10 +169,21 @@ body {
 }
 
 .about-content .about-des p {
-  margin: 0px 0px 90px 0px;
+  margin: 0px 0px 40px 0px;
   /* color: var(--lightgreen); */
   font-family: 'helvetica';
   font-weight: 100;
+}
+
+.about-content .about-des button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  font-family: 'Helvetica';
+  background-color: var(--lightgreen);
+  color: white;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .about-card .p-desk {
