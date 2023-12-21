@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 90px;
+    padding: 90px 0px;
 }
 
 .member_details{
@@ -42,6 +42,10 @@
 .member_details .member_content{
     gap: 20px;
     width: 80%;
+
+    @media(min-width:769px){
+        width: 750px;
+    }
 }
 
 .member_details .member_content .member_des h3{
