@@ -200,6 +200,15 @@ class Hero_section extends HTMLElement {
               <span>EVOLVING FOR A</span><br>
               SUSTAINABLE FUTURE
           </div>
+
+
+          <div class="scale snow"></div>
+          <div class="scale snow1"></div>
+          <div class="scale snow2"></div>
+          <div class="scale snow3"></div>
+          <div class="scale snow4"></div>
+
+
           <img id="hero-bg" src="../assets/images/Hero-Mobile.jpg" alt="hero" loading="lazy">
       </div>
     </main>
