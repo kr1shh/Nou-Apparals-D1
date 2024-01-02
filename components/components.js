@@ -117,7 +117,7 @@ class Footer_section extends HTMLElement {
                                   xmlns="http://www.w3.org/2000/svg">
                                   <path opacity="1"
                                       d="M28.0832 1.93065L2.00204 0.366025C0.984683 0.303206 0.400818 1.39213 0.930092 2.1859L4.06334 6.86199L22.5813 4.2675C22.9372 4.21568 23.0534 4.7311 22.7086 4.83704L4.99817 10.3217L2.83359 13.6027C2.19901 14.5645 3.11053 15.7099 4.14093 15.3894L8.80755 13.9463L12.4823 19.4243C12.8997 20.0506 13.7993 20.1235 14.3167 19.5698L28.8673 3.89869C29.5491 3.16682 29.0572 1.98826 28.0832 1.93065Z"
-                                      fill="#D6001C" />
+                                      fill="#6FB444" />
                               </svg>
                           </button>
                       </div>
@@ -177,7 +177,11 @@ class Footer_section extends HTMLElement {
                   </div>
               </div>
           </div>
-          <div class="lottie_comp" id="lottie"></div>
+          <div class="lottie_comp" id="lottie">
+            <video autoplay muted loop >
+                <source src="../assets/images/FooterVid.mp4" type="video/mp4" />
+            </video>
+          </div>
           <div class="footer-copy">
               <p>&copy; NOU APPARELS PVT LTD.</p>
           </div>
@@ -373,34 +377,34 @@ customElements.define("road-map", RoadMap_comp);
 
 /* =============== Lottie ============ */
 
-document.addEventListener("DOMContentLoaded", () => {
-  function startAnimation() {
-    var animation = bodymovin.loadAnimation({
-      container: document.getElementById("lottie"),
-      path: "../assets/Events/ChristmasTree.json",
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-    });
+// document.addEventListener("DOMContentLoaded", () => {
+//   function startAnimation() {
+//     var animation = bodymovin.loadAnimation({
+//       container: document.getElementById("lottie"),
+//       path: "../assets/Events/ChristmasTree.json",
+//       renderer: "svg",
+//       loop: true,
+//       autoplay: true,
+//     });
 
-    animation.play();
-  }
+//     animation.play();
+//   }
 
-  const options = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.5,
-  };
+//   const options = {
+//     root: null,
+//     rootMargin: "0px",
+//     threshold: 0.5,
+//   };
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        startAnimation();
-        observer.unobserve(entry.target);
-      }
-    });
-  }, options);
+//   const observer = new IntersectionObserver((entries, observer) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         startAnimation();
+//         observer.unobserve(entry.target);
+//       }
+//     });
+//   }, options);
 
-  const lottieElement = document.getElementById("lottie");
-  observer.observe(lottieElement);
-});
+//   const lottieElement = document.getElementById("lottie");
+//   observer.observe(lottieElement);
+// });

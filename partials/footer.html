@@ -120,7 +120,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../scripts/footerbg-script.js"></script>
     <script>
-        // Function to start the animation
+
         function startAnimation() {
             var animation = bodymovin.loadAnimation({
                 container: document.getElementById('lottie'),
@@ -133,24 +133,22 @@
             animation.play();
         }
 
-        // Intersection Observer setup
+
         const options = {
             root: null,
             rootMargin: '0px',
-            threshold: 0.5 // Adjust as needed, represents the visibility percentage
+            threshold: 0.5 
         };
 
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    // If the element enters the viewport
-                    startAnimation(); // Start the animation
-                    observer.unobserve(entry.target); // Stop observing once triggered
+                    startAnimation();
+                    observer.unobserve(entry.target); 
                 }
             });
         }, options);
 
-        // Element to observe
         const lottieElement = document.getElementById('lottie');
         observer.observe(lottieElement);
     </script>

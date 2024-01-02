@@ -2,7 +2,7 @@
 
 :root{
     --background:#101010;
-    --lightgreen:#D6001C;
+    --lightgreen:#6FB444;
     /*Light green #6FB444; */
     --darkgreen:#122903;
   }
@@ -205,9 +205,9 @@
   top: -136px;
   left: -165px;
   border-radius: 50rem;
-  /* filter: blur(48px); */
+  filter: blur(48px);
   opacity: .2;
-  /* background-color: white; */
+  background-color: white;
   z-index:-5;
   animation: scaleOdd 10s infinite linear alternate;
 }
@@ -219,9 +219,9 @@
     top: 39px;
     left: 279px;
     border-radius: 50rem;
-    /* filter: blur(20px); */
+    filter: blur(20px);
     opacity: .2;
-    /* background-color: white; */
+    background-color: white;
     z-index:-5;
     animation: scaleEven 10s infinite linear alternate;
   
@@ -233,9 +233,9 @@
   top: 376px;
   left: 195px;
   border-radius: 50rem;
-  /* filter: blur(6px); */
+  filter: blur(6px);
   opacity: .2;
-  /* background-color: white; */
+  background-color: white;
   z-index:-5;
   animation: scaleOdd 10s infinite linear alternate;
 
@@ -247,9 +247,9 @@
   top: 617px;
   left: -10px;
   border-radius: 50rem;
-  /* filter: blur(23px); */
+  filter: blur(23px);
   opacity: .2;
-  /* background-color: white; */
+  background-color: white;
   z-index:-5;
   animation: scaleEven 10s infinite linear alternate;
   
@@ -261,9 +261,9 @@
   top: 912px;
   left: 223px;
   border-radius: 50rem;
-  /* filter: blur(9px); */
+  filter: blur(9px);
   opacity: .2;
-  /* background-color: white; */
+  background-color: white;
   z-index:-5;
   animation: scaleOdd 10s infinite linear alternate;
 
@@ -276,9 +276,9 @@
   top: 1004px;
   left: -229px;
   border-radius: 50rem;
-  /* filter: blur(50px); */
+  filter: blur(50px);
   opacity: .2;
-  /* background-color: white; */
+  background-color: white;
   z-index:-5;
   animation: scaleEven 10s infinite linear alternate;
 
